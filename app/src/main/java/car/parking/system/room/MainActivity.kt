@@ -1,8 +1,9 @@
-package com.example.carparkingsystem
+package car.parking.system.room
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.carparkingsystem.R
 
 class MainActivity : AppCompatActivity()
 {

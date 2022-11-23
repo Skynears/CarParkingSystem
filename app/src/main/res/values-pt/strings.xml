@@ -1,4 +1,5 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
     <string name="app_name">Car Parking System</string>
     <string name="title_activity_login">login</string>
     <string name="prompt_email">Email</string>
