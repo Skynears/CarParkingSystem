@@ -1,50 +1,120 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Car Parking System</string>
-    <string name="title_activity_login">login</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="action_sing_out_short">Sign out</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
 
-    <string name="bemvindo">Bem vindo à aplicação</string>
-    <string name="opcao1">Cordenadas</string>
-    <string name="opcao2">SharedPreferences</string>
-    <string name="opcao3">Mapa</string>
-    <string name="opcao4">Mais Informações</string>
-    <string name="opcao5">Base de dados SQLite (GPS)</string>
-    <string name="textotitulo">Introduza as Cordenadas</string>
-    <string name="botao1">GUARDAR</string>
-    <string name="botao2">OK</string>
-    <string name="texto1">Latitude</string>
-    <string name="texto2">Longitude</string>
-    <string name="texto3">Distância</string>
-    <string name="texto4">Informação do Aluno</string>
-    <string name="texto5">       Fernando Chaves Malheiro                 </string>
-    <string name="texto6">               PM                        </string>
-    <string name="texto7">              ERSC            </string>
-    <string name="texto8">Escola Superior de Tecnologia e Gestão</string>
-    <string name="texto9">Insira a Distâcia</string>
-    <string name="filtro">filtro</string>
-    <string name="shared_pref_1">sp1</string>
-    <string name="title_activity_maps">Map</string>
-    <string name="filtrarmenor">Filtrar menor que</string>
-    <string name="ToastExemplo">preencha o campo Latitude</string>
-    <string name="ToastExemplo1">preencha o campo Longitude</string>
-    <string name="ToastExemplo2">Dados inválidos descarta</string>
-    <string name="ToastExemplo3">Latitude Inserida no SP: </string>
-    <string name="ToastExemplo4">Longitude Inserida no SP:</string>
-    <string name="ToastExemplo5">Sinal Pedido</string>
-    <string name="ToastExemplo6"> Pedido de sinal parado</string>
-    <string name="ToastExemplo7">Escolha a opção:</string>
-    <string name="ToastExemplo8">Apagar</string>
-    <string name="ToastExemplo9">Atualizar</string>
-    <string name="ToastExemplo10">Posição a apagar:</string>
-    <string name="ToastExemplo11">Apagado com sucesso</string>
-    <string name="aluno1">aluno1</string>
+    <string name="opcaoPT">Versão Portuguesa</string>
+    <string name="opcaoENG">Versão Inglesa</string>
+    <string name="opcaoAboutProject">Sobre o Projeto</string>
+    <string name="opcaoAboutGrupo">Sobre o Grupo</string>
+    <string name="opcaoAboutOrientador">Sobre o Orientador</string>
+    <string name="opcaoParques">PARQUES</string>
+    <string name="opcaoMapa">MAPA</string>
+
+
+    <string name="botaoEnter">ENTER</string>
+    <string name="botaoAbout">ABOUT</string>
+    <string name="botaoExit">EXIT</string>
+    <string name="botaoSingin">SINGIN</string>
+    <string name="botaoSingup">SINGUP</string>
+    <string name="botaoLogin">LOGIN</string>
+    <string name="botaoLogout">LOGOUT</string>
+    <string name="botaoAlterar">ALTERAR</string>
+    <string name="botaoRegistar">REGISTO</string>
+    <string name="botaoClose">CLOSE</string>
+
+    
+    <string name="about_text_Proj1">PROJETO</string>
+    <string name="about_text_Proj2">Car Parking System</string>
+    <string name="about_text_Proj3">Descrição:</string>
+
+
+    <string name="about_text_Doc1">DOCENTE</string>
+    <string name="about_text_Doc2">Sara Paiva</string>
+    <string name="about_text_Doc3">Progamação Móvel </string>
+    <string name="about_text_Doc4">Engenharia de Redes e Sistemas de Computadores</string>
+    <string name="about_text_Doc45">Escola Superior de Tecnologia e Gestão</string>
+
+
+    <string name="about_text_Equipa1">EQUIPA</string>
+    <string name="about_text_Equipa1_fern1">Fernando Malheiro</string>
+    <string name="about_text_Equipa1_fern2">Progamação Móvel </string>
+    <string name="about_text_Equipa1_fern3">Engenharia de Redes e Sistemas de Computadores</string>
+    <string name="about_text_Equipa1_fern4">Escola Superior de Tecnologia e Gestão</string>
+
+    <string name="about_text_Equipa1_Andr1">André Barreiro</string>
+    <string name="about_text_Equipa1_Andr2">Progamação Móvel </string>
+    <string name="about_text_Equipa1_Andr3">Engenharia de Redes e Sistemas de Computadores</string>
+    <string name="about_text_Equipa1_Andr4">Escola Superior de Tecnologia e Gestão</string>
+
+    <string name="about_text_Equipa1_Jose1">José Baptista</string>
+    <string name="about_text_Equipa1_Jose2">Progamação Móvel </string>
+    <string name="about_text_Equipa1_Jose3">Engenharia de Redes e Sistemas de Computadores</string>
+    <string name="about_text_Equipa1_Jose4">Escola Superior de Tecnologia e Gestão</string>
+
+    <string name="about_text_Equipa1_Ricar1">Ricardo Gonçalves</string>
+    <string name="about_text_Equipa1_Ricar2">Progamação Móvel </string>
+    <string name="about_text_Equipa1_Ricar3">Engenharia de Redes e Sistemas de Computadores</string>
+    <string name="about_text_Equipa1_Ricar4">Escola Superior de Tecnologia e Gestão</string>
+
+    <string name="about_text_Equipa1_Hugo1">Hugo Pereira</string>
+    <string name="about_text_Equipa1_Hugo2">Progamação Móvel </string>
+    <string name="about_text_Equipa1_Hugo3">Engenharia de Redes e Sistemas de Computadores</string>
+    <string name="about_text_Equipa1_Hugo4">Escola Superior de Tecnologia e Gestão</string>
+
+
+    <string name="ToastSingup1">Preencha o campo NºAluno</string>
+    <string name="ToastSingup2">Preencha o campo Email Institucional</string>
+    <string name="ToastSingup3">Preencha o campo Password</string>
+    <string name="registo_sucessful">"Registado com Sucesso"</string>
+
+    <string name="singup_n_invalido">NºAluno Inválido</string>
+    <string name="singup_email_invalido">Email Institucional Inválido</string>
+    <string name="singup_password_invalida">Password Inválida</string>
+    <string name="registo_failed">"O Registo Falhou"</string>
+
+    <string name="ToastSingin4">Preencha o campo Repetir Password</string>
+    <string name="ToastSingin1">Preencha o campo NºAluno</string>
+    <string name="ToastSingin2">Preencha o campo Password</string>
+    <string name="login_sucessful">"Bem-Vindo Nº:"</string>
+    <string name="logout_confirm_sucessful">"Deseja Realmelte Sair?"</string>
+    <string name="logout_sucessful">"Até Sempre Nº:"</string>
+
+    <string name="singin_email_invalido">Email Institucional Inválido</string>
+    <string name="singin_password_invalida">Password Inválida</string>
+    <string name="login_failed">"O Login Falhou"</string>
+    <string name="logout_failed">"O Logout Falhou"</string>
+
+    <string name="ToastAlterar1">Preencha o campo Email Institucional</string>
+    <string name="ToastAlterar2">Preencha o campo New Password</string>
+    <string name="ToastAlterar3">Preencha o campo Repetir New Password</string>
+    <string name="alterar_sucessful">"Os dados Alterados com Sucesso"</string>
+
+    <string name="alterar_email_invalido">Email Institucional Inválido</string>
+    <string name="alterar_password_invalida">Password Inválida</string>
+    <string name="alterar_repetir_password_invalida">Passwords Dont Match</string>
+    <string name="alterar_failed">"A Alteração dos Dados Falhou"</string>
+
+
+    <string name="ToastP1_1">Estado do Parque Nº1:</string>
+    <string name="ToastP1_2">Vagas Disponiveis:</string>
+    <string name="ToastP1_3">Vagas Indisponíveis:</string>
+    <string name="ToastP1_4">Niveís de Emissões CO2:</string>
+    <string name="ToastP1_5">Niveís de Temperatura:</string>
+    <string name="ToastP1_6">Niveís de Húmidade:</string>
+
+    <string name="ToastP2_1">Estado do Parque Nº2:</string>
+    <string name="ToastP2_2">Vagas Disponiveis:</string>
+    <string name="ToastP2_3">Vagas Indisponíveis:</string>
+    <string name="ToastP2_4">Niveís de Emissões CO2:</string>
+    <string name="ToastP2_5">Niveís de Temperatura:</string>
+    <string name="ToastP2_6">Niveís de Húmidade:</string>
+
+    <string name="ToastMapa1">Sinal GPS Pedido</string>
+    <string name="ToastMapa2">Latitude Armazenada na BD:</string>
+    <string name="ToastMapa3">Longitude Armazenada na BD:</string>
+    <string name="ToastMapa4">Distância Armazenada na BD:</string>
+    <string name="ToastMapa5"> Pedido de sinal GPS parado</string>
+    <string name="ToastMapa6"> Localização Atual:</string>
+    <string name="ToastMapa7"> Distância da Escola:</string>
+
+
 
 </resources>
