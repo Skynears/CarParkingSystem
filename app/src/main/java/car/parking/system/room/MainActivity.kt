@@ -1,8 +1,10 @@
 package car.parking.system.room
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import com.example.carparkingsystem.R
 
 class MainActivity : AppCompatActivity()
@@ -12,7 +14,7 @@ class MainActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-
+/*
     override fun onStart()
     {
         super.onStart()
@@ -53,4 +55,12 @@ class MainActivity : AppCompatActivity()
     {
         Log.d("Activity State ",msg)
     }
+
+    */
+
+    fun button(view: View) {
+        val intent = Intent(this, LogIn::class.java)
+        startActivity(intent)
+    }
+
 }
