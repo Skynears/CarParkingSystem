@@ -8,7 +8,8 @@
     <string name="opcaoAboutProject">Sobre o Projeto</string>
     <string name="opcaoAboutGrupo">Sobre o Grupo</string>
     <string name="opcaoAboutOrientador">Sobre o Orientador</string>
-    <string name="opcaoParques">PARQUES</string>
+    <string name="opcaoParque">PARQUE</string>
+    <string name="opcaoSHP">CORDENADAS GPS</string>
     <string name="opcaoMapa">MAPA</string>
 
 

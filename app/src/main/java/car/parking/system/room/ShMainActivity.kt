@@ -1,4 +1,4 @@
-/*package car.parking.system.room
+package car.parking.system.room;
 
 
 import android.annotation.SuppressLint
@@ -209,6 +209,3 @@ class ShMainActivity : AppCompatActivity() {
             }
         }
     }
-
-
-} */

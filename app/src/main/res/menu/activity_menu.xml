@@ -2,40 +2,37 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="estg.ipvc.teste3.principal">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/image"
+    tools:context="car.parking.system.room.MenuActivity">
 
     <item
-        android:id="@+id/opcão1"
+        android:id="@+id/btn_PE"
         android:orderInCategory="100"
-        android:title="@string/opcao1"
-        android:icon="@drawable/cordanada"
-        app:showAsAction="always" />
+        android:title="@string/opcaoParque"
+        android:icon="@drawable/parque"
+        app:showAsAction="always"/>
 
     <item
-        android:id="@+id/opcão2"
+        android:id="@+id/btn_SHP"
         android:orderInCategory="100"
-        android:title="@string/opcao2"
+        android:title="@string/opcaoSHP"
         android:icon="@drawable/dados"
-        app:showAsAction="always" />
+        app:showAsAction="always"/>
 
     <item
-        android:id="@+id/opcão3"
+        android:id="@+id/btn_map"
         android:orderInCategory="100"
-        android:title="@string/opcao3"
+        android:title="@string/opcaoMapa"
         android:icon="@drawable/map"
-        app:showAsAction="always" />
+        app:showAsAction="always"/>
 
-    <item
-        android:id="@+id/opcão4"
-        android:orderInCategory="100"
-        android:title="@string/opcao4"
-        app:showAsAction="never" />
 
-    <item
-        android:id="@+id/opcão5"
-        android:orderInCategory="100"
-        android:title="@string/opcao5"
-        app:showAsAction="never" />
 
 </menu>
 
