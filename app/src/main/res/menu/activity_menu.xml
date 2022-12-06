@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="estg.ipvc.teste3.principal">
+
+    <item
+        android:id="@+id/opcão1"
+        android:orderInCategory="100"
+        android:title="@string/opcao1"
+        android:icon="@drawable/cordanada"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/opcão2"
+        android:orderInCategory="100"
+        android:title="@string/opcao2"
+        android:icon="@drawable/dados"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/opcão3"
+        android:orderInCategory="100"
+        android:title="@string/opcao3"
+        android:icon="@drawable/map"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/opcão4"
+        android:orderInCategory="100"
+        android:title="@string/opcao4"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/opcão5"
+        android:orderInCategory="100"
+        android:title="@string/opcao5"
+        app:showAsAction="never" />
+
+</menu>
+

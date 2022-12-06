@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/image"
+    tools:context="car.parking.system.room.LoginActivity">
 
     <LinearLayout
         android:id="@+id/ll_main_layout_login"
@@ -16,18 +23,26 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
             android:padding="30dp"
+            android:text="Car Parking System"
+            android:textAlignment="center"
             android:textSize="25dp" />
 
         <EditText
-            android:id="@+id/et_user_name"
+            android:id="@+id/ed_email"
+            android:hint="@string/ToastSingup2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:inputType="text"
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/et_password"
+            android:id="@+id/ed_password"
+            android:hint="@string/ToastSingup3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
@@ -38,17 +53,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:padding="25dp">
 
             <Button
-                android:id="@+id/btn_submit"
+                android:id="@+id/btn_singin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAllCaps="false" />
+                android:layout_centerInParent="true"
+                android:text="@string/botaoSingin"
+                android:textAllCaps="false"></Button>
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_singin"
+                android:layout_centerInParent="true"
+                android:text="@string/botaoClose"
+                android:textAllCaps="false"></Button>
+
+
         </LinearLayout>
 
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

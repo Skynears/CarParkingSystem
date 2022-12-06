@@ -1,4 +1,5 @@
-package car.parking.system.room
+/*package car.parking.system.room
+
 
 import android.annotation.SuppressLint
 import android.content.ContentValues
@@ -17,7 +18,6 @@ import com.example.carparkingsystem.R
 import android.widget.*
 import car.parking.system.room.db.Contrato
 import car.parking.system.room.db.DB
-
 
 class ShMainActivity : AppCompatActivity() {
 
@@ -211,4 +211,4 @@ class ShMainActivity : AppCompatActivity() {
     }
 
 
-}
+} */
