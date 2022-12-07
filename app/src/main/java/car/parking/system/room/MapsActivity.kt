@@ -73,12 +73,11 @@ internal class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         var i = 1
         if (c_coordenadas != null) {
             while (!c_coordenadas.isAfterLast()) {
-                val latitude: Float =
-                    c_coordenadas?.getFloat(c_coordenadas.getColumnIndex("latitude")) ?:
-                val longitude: Float =
-                    c_coordenadas?.getFloat(c_coordenadas.getColumnIndex("longitude")) ?:
-                val pos = LatLng(latitude.toDouble(), longitude.toDouble())
-                mMap!!.addMarker(MarkerOptions().position(pos).title(Integer.toString(i)))
+                val latitude: Float? = c_coordenadas?.getFloat(c_coordenadas.getColumnIndex("latitude"))
+                val longitude: Float? = c_coordenadas?.getFloat(c_coordenadas.getColumnIndex("longitude"))
+                val pos = longitude?.let { latitude?.let { it1 -> LatLng(it1.toDouble(), it.toDouble()) } }
+                pos?.let { MarkerOptions().position(it).title(Integer.toString(i)) }
+                    ?.let { mMap!!.addMarker(it) }
                 c_coordenadas.moveToNext()
                 i++
             }

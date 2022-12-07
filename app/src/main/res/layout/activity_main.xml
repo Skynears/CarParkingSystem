@@ -31,7 +31,8 @@
         android:layout_centerInParent="true"
         android:onClick="button"
         android:text="@string/botaoEnter"
-        android:textAllCaps="false"></Button>
+        android:textAllCaps="false"
+        tools:ignore="OnClick"></Button>
 
     <Button
         android:id="@+id/btn_about"
@@ -41,7 +42,8 @@
         android:layout_centerInParent="true"
         android:onClick="button"
         android:textAllCaps="false"
-        android:text="@string/botaoAbout">
+        android:text="@string/botaoAbout"
+        tools:ignore="OnClick">
     </Button>
 
     <Button
@@ -52,7 +54,8 @@
         android:layout_centerInParent="true"
         android:onClick="button"
         android:textAllCaps="false"
-        android:text="@string/botaoExit">
+        android:text="@string/botaoExit"
+        tools:ignore="OnClick">
     </Button>
 
 

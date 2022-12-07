@@ -25,16 +25,19 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
+import androidx.annotation.NonNull
+import androidx.annotation.Nullable
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.api.GoogleApiClient
-import com.google.android.gms.location.LocationListener
-import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
 import car.parking.system.room.db.DB
 import car.parking.system.room.db.Contrato
 import car.parking.system.room.util.Util
 import com.example.carparkingsystem.R
+import com.google.android.gms.location.LocationRequest.PRIORITY_HIGH_ACCURACY
+import com.google.android.gms.location.Priority.PRIORITY_HIGH_ACCURACY
 
 
 class MainActivity : AppCompatActivity(), LocationListener, SensorEventListener,
@@ -51,23 +54,23 @@ class MainActivity : AppCompatActivity(), LocationListener, SensorEventListener,
     //double lastLatitude = 0;
     //double lastLongitude = 0;
     //VARIAVEIS GPS - PASSO 3
-    var locRequest: LocationRequest? = null
+    var locRequest: com.google.android.gms.location.LocationRequest? = null
 
     // VARIAVEIS GOOGLEPLAY
     private var mGoogleApiClient: GoogleApiClient? = null
-    var mLocationRequest: LocationRequest? = null
-    protected fun onCreate(savedInstanceState: Bundle?) {
+    var mLocationRequest: com.google.android.gms.location.LocationRequest? = null
+    protected override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_principal)
+        setContentView(R.layout.activity_main)
         mDbHelper = DB(this)
-        db = mDbHelper.getWritableDatabase()
+        db = mDbHelper!!.getWritableDatabase()
         editLatitude = findViewById(R.id.editlatitude) as EditText?
         editLongitude = findViewById(R.id.editlongitude) as EditText?
-        mLocationRequest = LocationRequest()
+        mLocationRequest = com.google.android.gms.location.LocationRequest()
         buildGoogleApiClient()
 
         //sensor
-        mSensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager?
+        mSensorManager = getSystemService(SENSOR_SERVICE) as SensorManager?
         mProximity = mSensorManager!!.getDefaultSensor(Sensor.TYPE_PROXIMITY)
     }
 
@@ -88,12 +91,12 @@ class MainActivity : AppCompatActivity(), LocationListener, SensorEventListener,
         val editLongitude = findViewById(R.id.editlongitude) as EditText
         if (editLongitude.text.toString() == "") {
             bolValido = false
-            Toast.makeText(this@principal, R.string.ToastExemplo1, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@MainActivity, R.string.ToastExemplo1, Toast.LENGTH_SHORT).show()
         }
         /*Toast.makeText(principal.this, editLongitude.getText().toString(), Toast.LENGTH_SHORT).show();
         TextView txtResumo1 = (TextView) findViewById(R.id.editlongitude);
         txtResumo1.setText(editLatitude.getText().toString());*/if (!bolValido) {
-            Toast.makeText(this@principal, R.string.ToastExemplo2, Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@MainActivity, R.string.ToastExemplo2, Toast.LENGTH_SHORT).show()
         } else {
 
             //       ContentValues cv = new ContentValues();
@@ -145,17 +148,19 @@ class MainActivity : AppCompatActivity(), LocationListener, SensorEventListener,
         }
     }
 
-    protected fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         // Check which request we're responding to
         if (requestCode == REQUEST_CODE_OP1) {
             // Make sure the request was successful
             if (resultCode == RESULT_OK) {
-                Toast.makeText(
-                    this@MainActivity,
-                    data.getStringExtra(Util.PARAM_OUTPUT),
-                    Toast.LENGTH_SHORT
-                ).show()
+                if (data != null) {
+                    Toast.makeText(
+                        this@MainActivity,
+                        data.getStringExtra(Util.PARAM_OUTPUT),
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
             }
         }
     }
@@ -168,21 +173,21 @@ class MainActivity : AppCompatActivity(), LocationListener, SensorEventListener,
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.opcão1 -> {
+            R.id.btn_PE -> {
                 Toast.makeText(this@MainActivity, R.string.opcaoParque, Toast.LENGTH_SHORT).show()
-                val i = Intent(this@MainActivity, ::class.java)
+                val i = Intent(this@MainActivity, ParqueActivity::class.java)
                 startActivity(i)
                 true
             }
-            R.id.opcão2 -> {
+            R.id.btn_SHP -> {
                 Toast.makeText(this@MainActivity, R.string.opcaoSHP, Toast.LENGTH_SHORT).show()
                 val r = Intent(this@MainActivity, ShMainActivity::class.java)
                 startActivity(r)
                 true
             }
-            R.id.opcão3 -> {
+            R.id.btn_map -> {
                 Toast.makeText(this@MainActivity, R.string.opcaoMapa, Toast.LENGTH_SHORT).show()
-                val a = Intent(this@MainActivity, ::class.java)
+                val a = Intent(this@MainActivity, MapsActivity::class.java)
                 startActivity(a)
                 true
             }
@@ -202,9 +207,9 @@ class MainActivity : AppCompatActivity(), LocationListener, SensorEventListener,
     }
 
     private fun createLocationRequest() {
-        mLocationRequest.setInterval(10000)
-        mLocationRequest.setFastestInterval(10000)
-        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
+        mLocationRequest?.setInterval(10000)
+        mLocationRequest?.setFastestInterval(10000)
+        mLocationRequest?.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
     }
 
     override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {
@@ -223,12 +228,12 @@ class MainActivity : AppCompatActivity(), LocationListener, SensorEventListener,
         }
     }
 
-    protected fun onResume() {
+    protected override fun onResume() {
         super.onResume()
         mSensorManager!!.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_NORMAL)
     }
 
-    protected fun onPause() {
+    protected override fun onPause() {
         super.onPause()
         mSensorManager!!.unregisterListener(this)
     }
@@ -266,13 +271,13 @@ class MainActivity : AppCompatActivity(), LocationListener, SensorEventListener,
 
     override fun onConnectionFailed(@NonNull connectionResult: ConnectionResult) {}
     override fun onConnectionSuspended(i: Int) {}
-    protected fun onStart() {
+    protected override fun onStart() {
         super.onStart()
         // inciiar o serviço de google play
         mGoogleApiClient!!.connect()
     }
 
-    fun onLocationChanged(location: Location) {
+    override fun onLocationChanged(location: Location) {
         val lastLatitude = location.latitude
         val lastLongitude = location.longitude
         GuardarCoordenadasGPS(lastLatitude.toFloat().toDouble(), lastLongitude.toFloat().toDouble())
