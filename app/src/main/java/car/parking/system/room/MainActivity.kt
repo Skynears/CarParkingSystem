@@ -1,6 +1,7 @@
 package car.parking.system.room
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.ContentValues
 import android.content.Context
@@ -17,8 +18,6 @@ import android.location.Location
 import android.location.LocationListener
 import android.location.LocationRequest
 import android.os.Bundle
-import android.support.v4.app.ActivityCompat
-import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
@@ -59,13 +58,14 @@ class MainActivity : AppCompatActivity(), LocationListener, SensorEventListener,
     // VARIAVEIS GOOGLEPLAY
     private var mGoogleApiClient: GoogleApiClient? = null
     var mLocationRequest: com.google.android.gms.location.LocationRequest? = null
+    @SuppressLint("MissingInflatedId")
     protected override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         mDbHelper = DB(this)
         db = mDbHelper!!.getWritableDatabase()
-        editLatitude = findViewById(R.id.editlatitude) as EditText?
-        editLongitude = findViewById(R.id.editlongitude) as EditText?
+        editLatitude = findViewById(R.id.latitude) as EditText?
+        editLongitude = findViewById(R.id.longitude) as EditText?
         mLocationRequest = com.google.android.gms.location.LocationRequest()
         buildGoogleApiClient()
 
@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity(), LocationListener, SensorEventListener,
 
     private fun GuardarCoordenadas() {
         var bolValido = true
-        val editLatitude = findViewById(R.id.editlatitude) as EditText
+        val editLatitude = findViewById(R.id.latitude) as EditText
         if (editLatitude.text.toString() == "") {
             bolValido = false
             Toast.makeText(this@MainActivity, R.string.ToastExemplo, Toast.LENGTH_SHORT).show()
@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity(), LocationListener, SensorEventListener,
         /*Toast.makeText(principal.this, editLatitude.getText().toString(), Toast.LENGTH_SHORT).show();
         TextView txtResumo = (TextView) findViewById(R.id.editlatitude);
         txtResumo.setText(editLatitude.getText().toString());*/
-        val editLongitude = findViewById(R.id.editlongitude) as EditText
+        val editLongitude = findViewById(R.id.longitude) as EditText
         if (editLongitude.text.toString() == "") {
             bolValido = false
             Toast.makeText(this@MainActivity, R.string.ToastExemplo1, Toast.LENGTH_SHORT).show()
@@ -209,7 +209,7 @@ class MainActivity : AppCompatActivity(), LocationListener, SensorEventListener,
     private fun createLocationRequest() {
         mLocationRequest?.setInterval(10000)
         mLocationRequest?.setFastestInterval(10000)
-        mLocationRequest?.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
+        mLocationRequest?.setPriority(LocationRequest.CONTENTS_FILE_DESCRIPTOR)
     }
 
     override fun onAccuracyChanged(sensor: Sensor, accuracy: Int) {
@@ -291,3 +291,21 @@ class MainActivity : AppCompatActivity(), LocationListener, SensorEventListener,
         const val MY_PREFS_NAME = "COORDENADAS"
     }
 }
+
+private fun Any.requestLocationUpdates(
+    mGoogleApiClient: GoogleApiClient?,
+    mLocationRequest: com.google.android.gms.location.LocationRequest?,
+    mainActivity: MainActivity
+) {
+    TODO("Not yet implemented")
+}
+
+private fun Any.removeLocationUpdates(
+    mGoogleApiClient: GoogleApiClient?,
+    mainActivity: MainActivity
+) {
+    TODO("Not yet implemented")
+}
+
+
+

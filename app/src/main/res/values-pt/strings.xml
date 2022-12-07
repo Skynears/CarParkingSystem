@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <string name="app_name">Car Parking System</string>
@@ -27,8 +26,11 @@
 
     <string name="about_text_Proj1">PROJETO</string>
     <string name="about_text_Proj2">Car Parking System</string>
-    <string name="about_text_Proj3">Descrição:</string>
+    <string name="about_text_Proj3">
+        Descrição:
 
+
+    </string>
 
     <string name="about_text_Doc1">DOCENTE</string>
     <string name="about_text_Doc2">Sara Paiva</string>
@@ -65,7 +67,7 @@
 
 
     <string name="ToastSingup1">Preencha o campo NºAluno</string>
-    <string name="ToastSingup2">Preencha o campo Email Institucional</string>
+    <string name="ToastSingup2">Preencha o campo Email</string>
     <string name="ToastSingup3">Preencha o campo Password</string>
     <string name="registo_sucessful">"Registado com Sucesso"</string>
 
@@ -74,9 +76,10 @@
     <string name="singup_password_invalida">Password Inválida</string>
     <string name="registo_failed">"O Registo Falhou"</string>
 
-    <string name="ToastSingin4">Preencha o campo Repetir Password</string>
+
     <string name="ToastSingin1">Preencha o campo NºAluno</string>
     <string name="ToastSingin2">Preencha o campo Password</string>
+    <string name="ToastSingin4">Preencha o campo Repetir Password</string>
     <string name="login_sucessful">"Bem-Vindo Nº:"</string>
     <string name="logout_confirm_sucessful">"Deseja Realmelte Sair?"</string>
     <string name="logout_sucessful">"Até Sempre Nº:"</string>
@@ -104,12 +107,7 @@
     <string name="ToastP1_5">Niveís de Temperatura:</string>
     <string name="ToastP1_6">Niveís de Húmidade:</string>
 
-    <string name="ToastP2_1">Estado do Parque Nº2:</string>
-    <string name="ToastP2_2">Vagas Disponiveis:</string>
-    <string name="ToastP2_3">Vagas Indisponíveis:</string>
-    <string name="ToastP2_4">Niveís de Emissões CO2:</string>
-    <string name="ToastP2_5">Niveís de Temperatura:</string>
-    <string name="ToastP2_6">Niveís de Húmidade:</string>
+
 
     <string name="ToastMapa1">Sinal GPS Pedido</string>
     <string name="ToastMapa2">Latitude Armazenada na BD:</string>
@@ -119,6 +117,32 @@
     <string name="ToastMapa6"> Localização Atual:</string>
     <string name="ToastMapa7"> Distância da Escola:</string>
 
+    <string name="shared_pref_1">SHPreferences</string>
+    <string name="filtro">filtro</string>
+    <string name="filtrarmenor">Filtrar menor que</string>
+    <string name="ToastExemplo">preencha o campo Latitude</string>
+    <string name="ToastExemplo1">preencha o campo Longitude</string>
+    <string name="ToastExemplo2">Dados inválidos descarta</string>
+    <string name="ToastExemplo3">Latitude Inserida no SP: </string>
+    <string name="ToastExemplo4">Longitude Inserida no SP:</string>
+    <string name="ToastExemplo5">Sinal Pedido</string>
+    <string name="ToastExemplo6"> Pedido de sinal parado</string>
+    <string name="ToastExemplo7">Escolha a opção:</string>
+    <string name="ToastExemplo8">Apagar</string>
+    <string name="ToastExemplo9">Atualizar</string>
+    <string name="ToastExemplo10">Posição a apagar:</string>
+    <string name="ToastExemplo11">Apagado com sucesso</string>
+
+
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
 
 
 </resources>

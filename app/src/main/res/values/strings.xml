@@ -32,7 +32,6 @@
 
     </string>
 
-
     <string name="about_text_Doc1">DOCENTE</string>
     <string name="about_text_Doc2">Sara Paiva</string>
     <string name="about_text_Doc3">Progamação Móvel </string>
@@ -108,12 +107,7 @@
     <string name="ToastP1_5">Niveís de Temperatura:</string>
     <string name="ToastP1_6">Niveís de Húmidade:</string>
 
-    <string name="ToastP2_1">Estado do Parque Nº2:</string>
-    <string name="ToastP2_2">Vagas Disponiveis:</string>
-    <string name="ToastP2_3">Vagas Indisponíveis:</string>
-    <string name="ToastP2_4">Niveís de Emissões CO2:</string>
-    <string name="ToastP2_5">Niveís de Temperatura:</string>
-    <string name="ToastP2_6">Niveís de Húmidade:</string>
+
 
     <string name="ToastMapa1">Sinal GPS Pedido</string>
     <string name="ToastMapa2">Latitude Armazenada na BD:</string>
@@ -123,9 +117,21 @@
     <string name="ToastMapa6"> Localização Atual:</string>
     <string name="ToastMapa7"> Distância da Escola:</string>
 
-
+    <string name="shared_pref_1">SHPreferences</string>
     <string name="filtro">filtro</string>
     <string name="filtrarmenor">Filtrar menor que</string>
+    <string name="ToastExemplo">preencha o campo Latitude</string>
+    <string name="ToastExemplo1">preencha o campo Longitude</string>
+    <string name="ToastExemplo2">Dados inválidos descarta</string>
+    <string name="ToastExemplo3">Latitude Inserida no SP: </string>
+    <string name="ToastExemplo4">Longitude Inserida no SP:</string>
+    <string name="ToastExemplo5">Sinal Pedido</string>
+    <string name="ToastExemplo6"> Pedido de sinal parado</string>
+    <string name="ToastExemplo7">Escolha a opção:</string>
+    <string name="ToastExemplo8">Apagar</string>
+    <string name="ToastExemplo9">Atualizar</string>
+    <string name="ToastExemplo10">Posição a apagar:</string>
+    <string name="ToastExemplo11">Apagado com sucesso</string>
 
 
     <string name="title_activity_maps">MapsActivity</string>
