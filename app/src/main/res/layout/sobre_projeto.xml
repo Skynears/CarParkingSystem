@@ -57,26 +57,19 @@
 
 
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAlignment="center">
 
+        <TextView
 
-    <TextView
-
-        android:id="@+id/about_text_Proj3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/about_text_Proj2"
-        android:layout_marginTop="27dp"
-        android:text="@string/about_text_Proj3"
-        android:textColor="@color/purple_700"
-        android:textSize="@dimen/activity_horizontal_margin"
-        android:textStyle="bold"
-        tools:ignore="UnknownIdInLayout" />
-
-    </ScrollView>
+            android:id="@+id/about_text_Proj3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_text_Proj2"
+            android:layout_marginTop="27dp"
+            android:text="@string/about_text_Proj3"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"
+            android:autoSizeMaxTextSize="@dimen/text_margin"
+            tools:ignore="UnknownIdInLayout" />
 
 
 
