@@ -29,34 +29,29 @@
         android:layout_width="109dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:onClick="button"
+        android:onClick="buttonLogin"
         android:text="@string/botaoEnter"
-        android:textAllCaps="false"
-        tools:ignore="OnClick"></Button>
+        android:textAllCaps="false"></Button>
 
     <Button
         android:id="@+id/btn_about"
-        android:layout_below="@+id/btn_enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_enter"
         android:layout_centerInParent="true"
-        android:onClick="button"
-        android:textAllCaps="false"
+        android:onClick="buttonAbout"
         android:text="@string/botaoAbout"
-        tools:ignore="OnClick">
-    </Button>
+        android:textAllCaps="false"></Button>
 
     <Button
         android:id="@+id/btn_exit"
-        android:layout_below="@+id/btn_about"
         android:layout_width="109dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_about"
         android:layout_centerInParent="true"
-        android:onClick="button"
-        android:textAllCaps="false"
+        android:onClick="buttonExit"
         android:text="@string/botaoExit"
-        tools:ignore="OnClick">
-    </Button>
+        android:textAllCaps="false"></Button>
 
 
 

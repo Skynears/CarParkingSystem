@@ -78,6 +78,20 @@ class MainActivity : AppCompatActivity(), LocationListener, SensorEventListener,
         GuardarCoordenadas()
     }
 
+    fun buttonLogin(view: View) {
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun buttonAbout(view: View) {
+        val intent = Intent(this, SobreProjetoActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun buttonExit(view: View){
+        finish()
+    }
+
     private fun GuardarCoordenadas() {
         var bolValido = true
         val editLatitude = findViewById(R.id.latitude) as EditText
