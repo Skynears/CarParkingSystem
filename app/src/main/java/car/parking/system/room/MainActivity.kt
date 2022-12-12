@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun buttonExit(view: View) {
+        onDestroy()
         finish()
-        System.out.close()
     }
 
 }

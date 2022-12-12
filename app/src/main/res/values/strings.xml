@@ -84,7 +84,7 @@
     <string name="ToastSingin1">Preencha o campo NºAluno</string>
     <string name="ToastSingin2">Preencha o campo Password</string>
     <string name="ToastSingin4">Preencha o campo Repetir Password</string>
-    <string name="login_sucessful">"Bem-Vindo Nº:"</string>
+    <string name="login_sucessful">"Bem-Vindo!"</string>
     <string name="logout_confirm_sucessful">"Deseja Realmelte Sair?"</string>
     <string name="logout_sucessful">"Até Sempre Nº:"</string>
 

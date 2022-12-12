@@ -12,16 +12,31 @@
     android:background="@color/azul"
     tools:context="car.parking.system.room.MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:paddingTop="25dp"
+        android:layout_width="245dp"
+        android:layout_height="161dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="36dp"
+        app:srcCompat="@drawable/img1" />
+
+
     <TextView
+        android:id="@+id/about_text_Proj2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        android:text="@string/about_text_Proj2"
+        android:layout_marginTop="35dp"
         android:layout_centerInParent="true"
-        android:layout_marginTop="25dp"
-        android:padding="30dp"
-        android:text="Car Parking System"
-        android:textAlignment="center"
-        android:textSize="25dp" />
+        android:layout_below="@+id/imageView"
+        android:paddingBottom="25dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/activity_horizontal_margin"/>
 
 
     <Button
@@ -29,9 +44,14 @@
         android:layout_width="109dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/about_text_Proj2"
+        android:layout_centerVertical="true"
         android:onClick="buttonLogin"
         android:text="@string/botaoEnter"
-        android:textAllCaps="false"></Button>
+        android:textAllCaps="false">
+
+    </Button>
 
     <Button
         android:id="@+id/btn_about"
@@ -39,9 +59,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_enter"
         android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:onClick="buttonAbout"
         android:text="@string/botaoAbout"
-        android:textAllCaps="false"></Button>
+        android:textAllCaps="false">
+
+    </Button>
 
     <Button
         android:id="@+id/btn_exit"
@@ -49,9 +73,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_about"
         android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:onClick="buttonExit"
         android:text="@string/botaoExit"
-        android:textAllCaps="false"></Button>
+        android:textAllCaps="false">
+
+    </Button>
 
 
 

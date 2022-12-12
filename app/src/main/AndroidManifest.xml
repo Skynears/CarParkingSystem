@@ -45,7 +45,12 @@
             android:exported="false" />
         <activity
             android:name="car.parking.system.room.LoginActivity"
-            android:exported="false" />
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="car.parking.system.room.ParqueActivity"
+            android:exported="true">
+        </activity>
 
         <meta-data
             android:name="com.google.android.gms.ads.AD_MANAGER_APP"
