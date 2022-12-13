@@ -25,14 +25,15 @@
 
             <EditText
                 android:id="@+id/editFiltro"
-                android:layout_width="106dp"
+                android:layout_width="89dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/linearLayout4"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:ems="10"
                 android:hint="@string/filtro"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <Button
                 android:id="@+id/button"
@@ -42,7 +43,8 @@
                 android:layout_toEndOf="@+id/editText"
                 android:layout_toRightOf="@+id/editText"
                 android:onClick="botao"
-                android:text="@string/filtrarmenor" />
+                android:text="@string/filtrarmenor"
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
         <ListView

@@ -16,6 +16,7 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 
 
+
 internal class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     var mDbHelper: DB? = null

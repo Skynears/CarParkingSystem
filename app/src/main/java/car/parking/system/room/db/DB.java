@@ -7,8 +7,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 import com.example.carparkingsystem.R;
 
-import org.jetbrains.annotations.Nullable;
-
 
 public class DB extends SQLiteOpenHelper {
 
