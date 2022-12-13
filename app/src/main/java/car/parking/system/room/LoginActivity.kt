@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity()
 
                 auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val intent = Intent(this, MainActivity::class.java)
+                        val intent = Intent(this, MenuActivity::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
@@ -49,19 +49,11 @@ class LoginActivity : AppCompatActivity()
                     }
                 }
             } else {
-                Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, R.string.ToastSingin5, Toast.LENGTH_SHORT).show()
 
             }
         }
 
-    }
-
-    override fun onStart() {
-        super.onStart()
-        if(auth.currentUser != null){
-            val intent = Intent(this, MenuActivity::class.java)
-            startActivity(intent)
-        }
     }
 
     fun buttonMain(view: View) {
