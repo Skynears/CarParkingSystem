@@ -10,7 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@drawable/image"
+    android:background="@color/azul"
     tools:context="car.parking.system.room.ParqueActivity">
 
     <RelativeLayout

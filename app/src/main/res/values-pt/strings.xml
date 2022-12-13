@@ -15,8 +15,8 @@
     <string name="botaoEnter">ENTER</string>
     <string name="botaoAbout">ABOUT US</string>
     <string name="botaoExit">EXIT</string>
-    <string name="botaoSingin">SINGIN</string>
-    <string name="botaoSingup">SINGUP</string>
+    <string name="botaoSingin">SING IN</string>
+    <string name="botaoSingup">SING UP</string>
     <string name="botaoLogin">LOGIN</string>
     <string name="botaoLogout">LOGOUT</string>
     <string name="botaoAlterar">ALTERAR</string>
@@ -27,10 +27,12 @@
     <string name="about_text_Proj1">PROJETO</string>
     <string name="about_text_Proj2">Car Parking System</string>
     <string name="about_text_Proj3">
-        Descrição:
-
-
+        Esta aplicação serve para mostrar aos alunos da ESTG,
+        uma maneira agíl e de forma a diminuir o CO2, os lugares de estacionamento disponiveis no campus.
+        Assim, pretendemos obter em tempo real informação relativa ao estado dos parques,
+        as vagas disponiveis e indisponíveis, a temperatura e a humidade registada no parque do campus.
     </string>
+
 
     <string name="about_text_Doc1">DOCENTE</string>
     <string name="about_text_Doc2">Sara Paiva</string>
@@ -80,7 +82,7 @@
     <string name="ToastSingin1">Preencha o campo NºAluno</string>
     <string name="ToastSingin2">Preencha o campo Password</string>
     <string name="ToastSingin4">Preencha o campo Repetir Password</string>
-    <string name="login_sucessful">"Bem-Vindo Nº:"</string>
+    <string name="login_sucessful">"Bem-Vindo!"</string>
     <string name="logout_confirm_sucessful">"Deseja Realmelte Sair?"</string>
     <string name="logout_sucessful">"Até Sempre Nº:"</string>
 
@@ -119,6 +121,9 @@
 
     <string name="shared_pref_1">SHPreferences</string>
     <string name="filtro">filtro</string>
+    <string name="sensor">
+        PASSE A MÃO SOBRE O SENSOR DO TELEMÓVEL
+    </string>
     <string name="filtrarmenor">Filtrar menor que</string>
     <string name="ToastExemplo">preencha o campo Latitude</string>
     <string name="ToastExemplo1">preencha o campo Longitude</string>

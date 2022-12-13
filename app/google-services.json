@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "894699832602",
+    "project_id": "loginpmersc",
+    "storage_bucket": "loginpmersc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894699832602:android:b1e58df6e36d6b687bd8a3",
+        "android_client_info": {
+          "package_name": "com.example.carparkingsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894699832602-emfc872mendjl6bvgojt6o8n547n417d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOklWGu5vYZEXayz_8SQP_Sa5a_nFAenM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894699832602-emfc872mendjl6bvgojt6o8n547n417d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
