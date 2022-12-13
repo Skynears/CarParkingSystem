@@ -12,16 +12,16 @@
     <string name="opcaoMapa">MAPA</string>
 
 
-    <string name="botaoEnter">ENTER</string>
-    <string name="botaoAbout">ABOUT US</string>
-    <string name="botaoExit">EXIT</string>
+    <string name="botaoEnter">ENTRAR</string>
+    <string name="botaoAbout">SOBRE</string>
+    <string name="botaoExit">SAIR</string>
     <string name="botaoSingin">SING IN</string>
     <string name="botaoSingup">SING UP</string>
     <string name="botaoLogin">LOGIN</string>
     <string name="botaoLogout">LOGOUT</string>
     <string name="botaoAlterar">ALTERAR</string>
     <string name="botaoRegistar">REGISTO</string>
-    <string name="botaoClose">CLOSE</string>
+    <string name="botaoClose">FECHAR</string>
 
 
     <string name="about_text_Proj1">PROJETO</string>
@@ -149,6 +149,8 @@
     <string name="welcome">"Welcome !"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
-
+    <string name="Language_already_selected">O idioma já está seleccionado</string>
+    <string name="lang_en">INGLÊS</string>
+    <string name="lang_pt">PORTUGUÊS</string>
 
 </resources>
