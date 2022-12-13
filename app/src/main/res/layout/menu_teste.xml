@@ -37,6 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView1"
+            android:layout_marginTop="-6dp"
             android:text="@string/sensor"
             android:textAlignment="center"
             android:textColor="@color/purple_700"
@@ -50,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="166dp"
         android:paddingTop="10dp">
 
 
