@@ -27,10 +27,12 @@
     <string name="about_text_Proj1">PROJECT</string>
     <string name="about_text_Proj2">Car Parking System</string>
     <string name="about_text_Proj3">
-        This application serves to show the students of ESTG,
-        in an agile way and in order to reduce CO2, the available parking spaces on campus.
-        Thus, we intend to obtain in real time information regarding the status of the parks,
-        the available and unavailable spaces, the temperature and the humidity registered in the campus park.
+        The Car Parking System is a mobile application aimed at teachers
+        and students of the IPVC ESTG. Thus, you can have real time access
+        to the number of parking spaces in the parking lots and also know
+        the ambient temperature and humidity registered in the campus
+        parking. However, we intend to decrease the time to park and the
+        CO2 emission.
     </string>
 
     <string name="about_text_Doc1">TEACHER</string>

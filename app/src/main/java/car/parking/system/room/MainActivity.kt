@@ -16,7 +16,7 @@ import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
     lateinit var locale: Locale
-    private var currentLanguage = "en"
+    private var currentLanguage = "pt"
     private var currentLang: String? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

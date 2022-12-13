@@ -3,45 +3,46 @@
 
     <string name="app_name">Car Parking System</string>
 
-    <string name="opcaoPT">Portuguese Version</string>
-    <string name="opcaoENG">English version</string>
-    <string name="opcaoAboutProject">About the project</string>
-    <string name="opcaoAboutGrupo">About the Group</string>
-    <string name="opcaoAboutOrientador">About the advisor</string>
-    <string name="opcaoParque">PARK</string>
-    <string name="opcaoSHP">GPS COORDINATES</string>
-    <string name="opcaoMapa">MAP</string>
+    <string name="opcaoPT">Versão Portuguesa</string>
+    <string name="opcaoENG">Versão Inglesa</string>
+    <string name="opcaoAboutProject">Sobre o Projeto</string>
+    <string name="opcaoAboutGrupo">Sobre o Grupo</string>
+    <string name="opcaoAboutOrientador">Sobre o Orientador</string>
+    <string name="opcaoParque">PARQUE</string>
+    <string name="opcaoSHP">CORDENADAS GPS</string>
+    <string name="opcaoMapa">MAPA</string>
 
 
-    <string name="botaoEnter">ENTER</string>
-    <string name="botaoAbout">ABOUT US</string>
-    <string name="botaoExit">EXIT</string>
+    <string name="botaoEnter">ENTRAR</string>
+    <string name="botaoAbout">SOBRE</string>
+    <string name="botaoExit">SAIR</string>
     <string name="botaoSingin">SING IN</string>
     <string name="botaoSingup">SING UP</string>
     <string name="botaoLogin">LOGIN</string>
     <string name="botaoLogout">LOGOUT</string>
     <string name="botaoAlterar">CHANGE</string>
     <string name="botaoRegistar">REGISTO</string>
-    <string name="botaoClose">CLOSE</string>
+    <string name="botaoClose">FECHAR</string>
 
 
-    <string name="about_text_Proj1">PROJECT</string>
+    <string name="about_text_Proj1">PROJETO</string>
     <string name="about_text_Proj2">Car Parking System</string>
     <string name="about_text_Proj3">
-        This application serves to show the students of ESTG,
-        in an agile way and in order to reduce CO2, the available parking spaces on campus.
-        Thus, we intend to obtain in real time information regarding the status of the parks,
-        the available and unavailable spaces, the temperature and the humidity registered in the campus park.
+        O Car Parking System é uma aplicação móvel dirigida a docentes e
+        estudantes da ESTG do IPVC. Assim, poderá ter acesso em tempo real
+        ao número de vagas nos parques de estacionamento e também saber a temperatura
+        ambiente e a humidade registada no parque do campus. Contudo,
+        pretendemos diminuir o tempo a estacionar e a emissão de CO2.
     </string>
 
-    <string name="about_text_Doc1">TEACHER</string>
+    <string name="about_text_Doc1">DOCENTE</string>
     <string name="about_text_Doc2">Sara Paiva</string>
     <string name="about_text_Doc3">Progamação Móvel </string>
     <string name="about_text_Doc4">Engenharia de Redes e Sistemas de Computadores</string>
     <string name="about_text_Doc45">Escola Superior de Tecnologia e Gestão</string>
 
 
-    <string name="about_text_Equipa1">TEAM</string>
+    <string name="about_text_Equipa1">EQUIPA</string>
     <string name="about_text_Equipa1_fern1">Fernando Malheiro</string>
     <string name="about_text_Equipa1_fern2">Progamação Móvel </string>
     <string name="about_text_Equipa1_fern3">Engenharia de Redes e Sistemas de Computadores</string>
@@ -69,8 +70,8 @@
 
 
     <string name="ToastSingup1">Preencha o campo NºAluno</string>
-    <string name="ToastSingup2">Fill in the field Email</string>
-    <string name="ToastSingup3">Fill in the field Password</string>
+    <string name="ToastSingup2">Preencha o campo Email</string>
+    <string name="ToastSingup3">Preencha o campo Password</string>
     <string name="registo_sucessful">"Registado com Sucesso"</string>
 
     <string name="singup_n_invalido">NºAluno Inválido</string>
@@ -82,8 +83,8 @@
     <string name="ToastSingin1">Preencha o campo NºAluno</string>
     <string name="ToastSingin2">Preencha o campo Password</string>
     <string name="ToastSingin4">Preencha o campo Repetir Password</string>
-    <string name="ToastSingin5">Empty Fields Are not Allowed</string>
-    <string name="login_sucessful">Welcome!</string>
+    <string name="ToastSingin5">Campos Vazios Não São Permitidos</string>
+    <string name="login_sucessful">"Bem-Vindo!"</string>
     <string name="logout_confirm_sucessful">"Deseja Realmelte Sair?"</string>
     <string name="logout_sucessful">"Até Sempre Nº:"</string>
 
@@ -103,36 +104,38 @@
     <string name="alterar_failed">"A Alteração dos Dados Falhou"</string>
 
 
-    <string name="ToastP1_1">Park Status #1:</string>
-    <string name="ToastP1_2">Parking Spaces Available:</string>
-    <string name="ToastP1_3">Parking Spaces Unavailable:</string>
-    <string name="ToastP1_4">CO2 Emissions Levels:</string>
-    <string name="ToastP1_5">Temperature levels:</string>
-    <string name="ToastP1_6">Humidity levels:</string>
+    <string name="ToastP1_1">Estado do Parque Nº1:</string>
+    <string name="ToastP1_2">Vagas Disponiveis:</string>
+    <string name="ToastP1_3">Vagas Indisponíveis:</string>
+    <string name="ToastP1_4">Niveís de Emissões CO2:</string>
+    <string name="ToastP1_5">Niveís de Temperatura:</string>
+    <string name="ToastP1_6">Niveís de Húmidade:</string>
 
 
     <string name="ToastMapa1">Sinal GPS Pedido</string>
-    <string name="ToastMapa2">Latitude Stored in the DB:</string>
-    <string name="ToastMapa3">Longitude Stored in the DB::</string>
-    <string name="ToastMapa4">Distance Stored in the DB:</string>
-    <string name="ToastMapa5">GPS signal request stopped</string>
-    <string name="ToastMapa6">Current Location:</string>
-    <string name="ToastMapa7">Distance from School:</string>
+    <string name="ToastMapa2">Latitude Armazenada na BD:</string>
+    <string name="ToastMapa3">Longitude Armazenada na BD:</string>
+    <string name="ToastMapa4">Distância Armazenada na BD:</string>
+    <string name="ToastMapa5"> Pedido de sinal GPS parado</string>
+    <string name="ToastMapa6"> Localização Atual:</string>
+    <string name="ToastMapa7"> Distância da Escola:</string>
 
     <string name="shared_pref_1">SHPreferences</string>
     <string name="filtro">filtro</string>
-    <string name="sensor">PUT YOUR HAND OVER THE CELL PHONE SENSOR</string>
-    <string name="filtrarmenor">Filter less than</string>
-    <string name="ToastExemplo">fill in the field Latitude</string>
-    <string name="ToastExemplo1">fill in the field Longitude</string>
-    <string name="ToastExemplo2">Invalid data discards</string>
-    <string name="ToastExemplo3">Latitude Inserted in SP:</string>
-    <string name="ToastExemplo4">Longitude Inserted into SP:</string>
-    <string name="ToastExemplo5">Signal Lost</string>
+    <string name="sensor">
+        PASSE A MÃO SOBRE O SENSOR DO TELEMÓVEL
+    </string>
+    <string name="filtrarmenor">Filtrar menor que</string>
+    <string name="ToastExemplo">preencha o campo Latitude</string>
+    <string name="ToastExemplo1">preencha o campo Longitude</string>
+    <string name="ToastExemplo2">Dados inválidos descarta</string>
+    <string name="ToastExemplo3">Latitude Inserida no SP: </string>
+    <string name="ToastExemplo4">Longitude Inserida no SP:</string>
+    <string name="ToastExemplo5">Sinal Pedido</string>
     <string name="ToastExemplo6"> Pedido de sinal parado</string>
-    <string name="ToastExemplo7">Choose the option:</string>
-    <string name="ToastExemplo8">Delete</string>
-    <string name="ToastExemplo9">Update</string>
+    <string name="ToastExemplo7">Escolha a opção:</string>
+    <string name="ToastExemplo8">Apagar</string>
+    <string name="ToastExemplo9">Atualizar</string>
     <string name="ToastExemplo10">Posição a apagar:</string>
     <string name="ToastExemplo11">Apagado com sucesso</string>
 
@@ -146,8 +149,8 @@
     <string name="welcome">"Welcome !"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
-    <string name="Language_already_selected">Language is Already Selected</string>
-    <string name="lang_en">ENGLISH</string>
-    <string name="lang_pt">PORTUGUESE</string>
+    <string name="Language_already_selected">O idioma já está seleccionado</string>
+    <string name="lang_en">INGLÊS</string>
+    <string name="lang_pt">PORTUGUÊS</string>
 
 </resources>
