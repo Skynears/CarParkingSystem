@@ -24,12 +24,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-    }
-
     fun buttonExit(view: View) {
-        onDestroy()
+        this.finishAffinity()
     }
 
 }
