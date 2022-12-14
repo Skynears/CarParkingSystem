@@ -14,11 +14,11 @@
 
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_width="381dp"
+        android:layout_height="508dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
 
         <ImageView
             android:id="@+id/imageView"
@@ -35,15 +35,15 @@
             android:id="@+id/about_text_Proj2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/purple_700"
-            android:text="@string/about_text_Proj2"
-            android:layout_marginTop="35dp"
-            android:layout_centerInParent="true"
             android:layout_below="@+id/imageView"
-            android:paddingBottom="25dp"
+            android:layout_centerInParent="true"
             android:layout_centerHorizontal="true"
-            android:textSize="@dimen/activity_horizontal_margin"/>
+            android:layout_marginTop="35dp"
+            android:paddingBottom="25dp"
+            android:text="@string/about_text_Proj2"
+            android:textColor="@color/purple_700"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_enter"
@@ -61,7 +61,7 @@
             android:id="@+id/btn_about"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_registro"
+            android:layout_below="@+id/btn_enter"
             android:layout_centerInParent="true"
             android:onClick="buttonAbout"
             android:text="@string/botaoAbout"
@@ -80,7 +80,6 @@
             android:textAllCaps="false">
 
         </Button>
-
 
 
     </RelativeLayout>
