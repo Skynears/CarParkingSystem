@@ -43,31 +43,15 @@
     <string name="about_text_Doc45">Escola Superior de Tecnologia e Gestão</string>
 
 
-    <string name="about_text_Equipa1">EQUIPA</string>
-    <string name="about_text_Equipa1_fern1">Fernando Malheiro</string>
-    <string name="about_text_Equipa1_fern2">Progamação Móvel </string>
-    <string name="about_text_Equipa1_fern3">Engenharia de Redes e Sistemas de Computadores</string>
-    <string name="about_text_Equipa1_fern4">Escola Superior de Tecnologia e Gestão</string>
-
-    <string name="about_text_Equipa1_Andr1">André Barreiro</string>
-    <string name="about_text_Equipa1_Andr2">Progamação Móvel </string>
-    <string name="about_text_Equipa1_Andr3">Engenharia de Redes e Sistemas de Computadores</string>
-    <string name="about_text_Equipa1_Andr4">Escola Superior de Tecnologia e Gestão</string>
-
-    <string name="about_text_Equipa1_Jose1">José Baptista</string>
-    <string name="about_text_Equipa1_Jose2">Progamação Móvel </string>
-    <string name="about_text_Equipa1_Jose3">Engenharia de Redes e Sistemas de Computadores</string>
-    <string name="about_text_Equipa1_Jose4">Escola Superior de Tecnologia e Gestão</string>
-
-    <string name="about_text_Equipa1_Ricar1">Ricardo Gonçalves</string>
-    <string name="about_text_Equipa1_Ricar2">Progamação Móvel </string>
-    <string name="about_text_Equipa1_Ricar3">Engenharia de Redes e Sistemas de Computadores</string>
-    <string name="about_text_Equipa1_Ricar4">Escola Superior de Tecnologia e Gestão</string>
-
-    <string name="about_text_Equipa1_Hugo1">Hugo Pereira</string>
-    <string name="about_text_Equipa1_Hugo2">Progamação Móvel </string>
-    <string name="about_text_Equipa1_Hugo3">Engenharia de Redes e Sistemas de Computadores</string>
-    <string name="about_text_Equipa1_Hugo4">Escola Superior de Tecnologia e Gestão</string>
+    <string name="about_text_Equipa1">DESENVOLVEDORES</string>
+    <string name="about_text_Equipa1_fern1">Fernando Malheiro | Nº-19523</string>
+    <string name="about_text_Equipa1_Jose1">José Baptista | Nº-24834</string>
+    <string name="about_text_Equipa1_Andr1">André Barreiro | Nº-23680</string>
+    <string name="about_text_Equipa1_Ricar1">Ricardo Gonçalves | Nº-24839</string>
+    <string name="about_text_Equipa1_Hugo1">Hugo Pereira | Nº-23051</string>
+    <string name="about_text_Equipa1_1">Progamação Móvel </string>
+    <string name="about_text_Equipa1_2">Engenharia de Redes e Sistemas de Computadores</string>
+    <string name="about_text_Equipa1_3">Escola Superior de Tecnologia e Gestão</string>
 
 
     <string name="ToastSingup1">Preencha o campo NºAluno</string>
