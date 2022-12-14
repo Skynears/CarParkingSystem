@@ -82,10 +82,7 @@ class ShMainActivity : AppCompatActivity() {
                 null
             )
             //sqLiteDatabase.query(tableName, tableColumns, whereClause, whereArgs, groupBy, having, orderBy);
-            adapter = SimpleCursorAdapter(
-                this,
-                R.layout.sh_activity_row,
-                c_coordenadas,
+            adapter = SimpleCursorAdapter(this, R.layout.sh_activity_row, c_coordenadas,
                 arrayOf<String>(
                     Contrato.Coordenada.COLUMN_LATITUDE,
                     Contrato.Coordenada.COLUMN_LONGITUDE,

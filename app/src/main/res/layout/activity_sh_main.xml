@@ -21,30 +21,29 @@
         <LinearLayout
             android:id="@+id/linearLayout4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="60dp">
 
             <EditText
                 android:id="@+id/editFiltro"
-                android:layout_width="89dp"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_below="@+id/linearLayout4"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
-                android:ems="10"
+                android:ems="8"
                 android:hint="@string/filtro"
-                android:inputType="textPersonName"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:inputType="textPersonName" />
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="242dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignBottom="@+id/editText"
                 android:layout_toEndOf="@+id/editText"
                 android:layout_toRightOf="@+id/editText"
+                android:ems="15"
                 android:onClick="botao"
-                android:text="@string/filtrarmenor"
-                tools:ignore="TouchTargetSizeCheck" />
+                android:text="@string/filtrarmenor" />
         </LinearLayout>
 
         <ListView

@@ -19,6 +19,7 @@
     <string name="botaoSingup">SING UP</string>
     <string name="botaoLogin">LOGIN</string>
     <string name="botaoLogout">LOGOUT</string>
+    <string name="botaoGET">GET LOCATION</string>
     <string name="botaoAlterar">CHANGE</string>
     <string name="botaoRegistar">REGISTER</string>
     <string name="botaoClose">CLOSE</string>
@@ -127,7 +128,7 @@
     <string name="shared_pref_1">SHPreferences</string>
     <string name="filtro">filtro</string>
     <string name="sensor">PUT YOUR HAND OVER THE CELL PHONE SENSOR</string>
-    <string name="filtrarmenor">Filter less than</string>
+    <string name="filtrarmenor">Filter less</string>
     <string name="ToastExemplo">fill in the field Latitude</string>
     <string name="ToastExemplo1">fill in the field Longitude</string>
     <string name="ToastExemplo2">Invalid data discards</string>

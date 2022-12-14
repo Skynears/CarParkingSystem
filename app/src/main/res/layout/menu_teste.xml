@@ -15,44 +15,10 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="3dp"
-        android:paddingTop="15dp">
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="-22dp"
-            android:paddingTop="20dp"
-            app:srcCompat="@drawable/arrow">
-
-        </ImageView>
-
-        <TextView
-            android:id="@+id/sensor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView1"
-            android:layout_marginTop="-6dp"
-            android:text="@string/sensor"
-            android:textAlignment="center"
-            android:textColor="@color/purple_700"
-            android:textSize="@dimen/text_margin"
-            android:textStyle="bold" />
-
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="166dp"
-        android:paddingTop="10dp">
+        android:layout_marginTop="40dp"
+        android:paddingTop="40dp">
 
 
         <ImageView
@@ -61,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="10dp"
             android:paddingTop="10dp"
             app:srcCompat="@drawable/img1" />
 
@@ -91,12 +57,23 @@
             android:textSize="25dp" />
 
         <Button
-            android:id="@+id/btn_close"
+            android:id="@+id/getLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/login_sucessful"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="13dp"
+            android:onClick="buttonGET"
+            android:text="@string/botaoGET"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/getLocation"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-1dp"
             android:onClick="buttonLogout"
             android:text="@string/botaoLogout"
             android:textAllCaps="false">

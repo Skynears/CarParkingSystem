@@ -20,6 +20,7 @@
     <string name="botaoSingup">SING UP</string>
     <string name="botaoLogin">LOGIN</string>
     <string name="botaoLogout">LOGOUT</string>
+    <string name="botaoGET">SOLICITAR LOCALIZACAO</string>
     <string name="botaoAlterar">CHANGE</string>
     <string name="botaoRegistar">REGISTO</string>
     <string name="botaoClose">FECHAR</string>
@@ -129,7 +130,7 @@
     <string name="sensor">
         PASSE A MÃO SOBRE O SENSOR DO TELEMÓVEL
     </string>
-    <string name="filtrarmenor">Filtrar menor que</string>
+    <string name="filtrarmenor">Filtrar menor</string>
     <string name="ToastExemplo">preencha o campo Latitude</string>
     <string name="ToastExemplo1">preencha o campo Longitude</string>
     <string name="ToastExemplo2">Dados inválidos descarta</string>

@@ -2,98 +2,217 @@ package car.parking.system.room
 
 import android.Manifest
 import android.annotation.SuppressLint
-import android.app.Activity
-import android.content.ContentValues
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.content.pm.PackageManager
-import android.database.Cursor
-import android.database.sqlite.SQLiteDatabase
-import android.hardware.Sensor
-import android.hardware.SensorEvent
-import android.hardware.SensorEventListener
-import android.hardware.SensorManager
-import android.hardware.camera2.CaptureRequest.SENSOR_SENSITIVITY
-import android.hardware.camera2.CaptureResult.SENSOR_SENSITIVITY
 import android.location.Geocoder
 import android.location.Location
-import android.location.LocationListener
+import android.location.LocationManager
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.*
-import androidx.annotation.Nullable
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import car.parking.system.room.db.Contrato
-import car.parking.system.room.db.DB
-import car.parking.system.room.util.Util
 import com.example.carparkingsystem.R
-import com.google.android.gms.common.api.GoogleApiActivity
-import com.google.android.gms.common.api.GoogleApiClient
-import com.google.android.gms.location.LocationRequest
-import com.google.android.gms.location.LocationServices
+import com.google.android.gms.location.*
 import com.google.firebase.auth.FirebaseAuth
+import android.os.Looper
+import android.util.Log
+import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
+import androidx.constraintlayout.motion.widget.Debug.getLocation
+import java.util.*
 
-// SensorEventListener, LocationListener
+class MenuActivity : AppCompatActivity(){
 
- class MenuActivity : AppCompatActivity(){
-
-     /*
-    private lateinit var sensorManager: SensorManager
-    private lateinit var mSensorManager: SensorManager
-    private lateinit var mProximity: Sensor
-
-    private lateinit var c_coordenadas: Cursor
-
-    private val SENSOR_SENSITIVITY = 4
-
-    private lateinit var editLatitude: EditText
-    private lateinit var editLongitude: EditText
-
-    private val REQUEST_CODE_OP1 = 1
-
-    private lateinit var mDbHelper: DB
-    private lateinit var db: SQLiteDatabase
-
-
-    //VARIAVEIS GPS - PASSO 3
-    private lateinit var locRequest: LocationRequest
-
-    // VARIAVEIS GOOGLEPLAY
-    private lateinit var mGoogleApiClient: GoogleApiClient
-    private lateinit var mLocationRequest: LocationRequest
-
-     val MY_PREFS_NAME = "COORDENADAS"
-     */
+    /*
+     var fusedLocationClient: FusedLocationProviderClient? = null
+     private lateinit var tvGpsLocation: TextView
+     private lateinit var fusedLocationProviderClient: FusedLocationProviderClient
+     private lateinit var locationRequest: LocationRequest
+     private val locationPermissionCode = 2
+     private val PERMISSION_ID = 1010 */
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        // get reference to button
+       // val getpos= findViewById(R.id.getpos) as Button
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.menu_teste)
 
         /*
-        this.sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
+        fusedLocationClient = LocationServices.
+        getFusedLocationProviderClient(this)
 
-        mDbHelper = DB(this)
-        db = mDbHelper.writableDatabase
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
 
-        editLatitude = findViewById(R.id.latitude) as EditText
-        editLongitude = findViewById(R.id.longitude) as EditText
+        getpos.setOnClickListener {
+            Log.d("Debug:",CheckPermission().toString())
+            Log.d("Debug:",isLocationEnabled().toString())
+            RequestPermission()
+            /* fusedLocationProviderClient.lastLocation.addOnSuccessListener{location: Location? ->
+                 textView.text = location?.latitude.toString() + "," + location?.longitude.toString()
+             }*/
+            getLastLocation()
+        }
 
-        mLocationRequest = LocationRequest()
-       // buildGoogleApiClient()
+        val button: Button = findViewById(R.id.getLocation)
+        button.setOnClickListener {
+            getLocation()
+        } */
+    }
 
 
-        //sensor
-        mSensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
-        mProximity = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY) */
+
+    /*
+    fun getLastLocation(){
+        if(CheckPermission()){
+            if(isLocationEnabled()){
+                if (ActivityCompat.checkSelfPermission(
+                        this,
+                        Manifest.permission.ACCESS_FINE_LOCATION
+                    ) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
+                        this,
+                        Manifest.permission.ACCESS_COARSE_LOCATION
+                    ) != PackageManager.PERMISSION_GRANTED
+                ) {
+                    // TODO: Consider calling
+                    //    ActivityCompat#requestPermissions
+                    // here to request the missing permissions, and then overriding
+                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                    //                                          int[] grantResults)
+                    // to handle the case where the user grants the permission. See the documentation
+                    // for ActivityCompat#requestPermissions for more details.
+                    return
+                }
+                fusedLocationProviderClient.lastLocation.addOnCompleteListener { task->
+                    var location:Location? = task.result
+                    if(location == null){
+                        NewLocationData()
+                    }else{
+                        Log.d("Debug:" ,"Your Location:"+ location.longitude)
+                       // TextView.text = "You Current Location is : Long: "+ location.longitude + " , Lat: " + location.latitude + "\n" + getCityName(location.latitude,location.longitude
+                    }
+                }
+            }else{
+                Toast.makeText(this,"Please Turn on Your device Location",Toast.LENGTH_SHORT).show()
+            }
+        }else{
+            RequestPermission()
+        }
+    }
+
+
+    fun NewLocationData(){
+        var locationRequest =  LocationRequest()
+        locationRequest.priority = LocationRequest.PRIORITY_HIGH_ACCURACY
+        locationRequest.interval = 0
+        locationRequest.fastestInterval = 0
+        locationRequest.numUpdates = 1
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
+        if (ActivityCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_FINE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_COARSE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return
+        }
+        fusedLocationProviderClient!!.requestLocationUpdates(
+            locationRequest,locationCallback,Looper.myLooper()
+        )
+    }
+
+
+    private val locationCallback = object : LocationCallback(){
+        override fun onLocationResult(locationResult: LocationResult) {
+            var lastLocation: Location? = locationResult.lastLocation
+            if (lastLocation != null) {
+                Log.d("Debug:","your last last location: "+ lastLocation.longitude.toString())
+            }
+            // TextView.text = "You Last Location is : Long: "+ lastLocation.longitude + " , Lat: " + lastLocation.latitude + "\n" + getCityName(lastLocation.latitude,lastLocation.longitude
+        }
+    }
+
+    private fun CheckPermission():Boolean{
+        //this function will return a boolean
+        //true: if we have permission
+        //false if not
+        if(
+            ActivityCompat.checkSelfPermission(this,android.Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED ||
+            ActivityCompat.checkSelfPermission(this,android.Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
+        ){
+            return true
+        }
+
+        return false
 
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    fun RequestPermission(){
+        //this function will allows us to tell the user to requesut the necessary permsiion if they are not garented
+        ActivityCompat.requestPermissions(
+            this,
+            arrayOf(android.Manifest.permission.ACCESS_COARSE_LOCATION,android.Manifest.permission.ACCESS_FINE_LOCATION),
+            PERMISSION_ID
+        )
+    }
+
+    fun isLocationEnabled():Boolean{
+        //this function will return to us the state of the location service
+        //if the gps or the network provider is enabled then it will return true otherwise it will return false
+        var locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
+        return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)
+    }
+
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if(requestCode == PERMISSION_ID){
+            if(grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                Log.d("Debug:","You have the Permission")
+            }
+        }
+    }
+
+    private fun getCityName(lat: Double, long: Double):String{
+        var cityName:String = ""
+        var countryName = ""
+        var geoCoder = Geocoder(this, Locale.getDefault())
+        var Adress = geoCoder.getFromLocation(lat,long,3)
+
+        if (Adress != null) {
+            cityName = Adress.get(0).locality
+        }
+        if (Adress != null) {
+            countryName = Adress.get(0).countryName
+        }
+        Log.d("Debug:","Your City: " + cityName + " ; your Country " + countryName)
+        return cityName
+    }
+
+     */
+
+     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+
         menuInflater.inflate(R.menu.activity_menu,menu)
         return super.onCreateOptionsMenu(menu)
     }
@@ -122,160 +241,15 @@ import com.google.firebase.auth.FirebaseAuth
         }
     }
 
+
+
     fun buttonLogout(view: View) {
         FirebaseAuth.getInstance().signOut()
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
 
-/*
-    private fun GuardarCoordenadasGPS(lastLatitude: Double, lastLongitude: Double)
-    {
-        val prefs = getSharedPreferences("text" MODE_PRIVATE)
-        val restoredText = prefs.getString("text", null)
-        if (restoredText != null)
-        {
-            val latitude = prefs.getFloat("Latitude", 41.70.toFloat())
-            val longitude = prefs.getFloat("Longitude", -8.82.toFloat())
-            val cv = ContentValues()
-
-            //depois alterar para valores sensor
-            val locGPS = Location("")
-            locGPS.latitude = lastLatitude
-            locGPS.longitude = lastLongitude
-            val locInserida = Location("")
-            locInserida.latitude = latitude.toDouble()
-            locInserida.longitude = longitude.toDouble()
-
-            var distancia = locGPS.distanceTo(locInserida)
-            //converter em km:
-            distancia = distancia / 1000
-
-            cv.put(Contrato.Coordenada.COLUMN_LATITUDE, lastLatitude)
-            cv.put(Contrato.Coordenada.COLUMN_LONGITUDE, lastLongitude)
-            cv.put(Contrato.Coordenada.COLUMN_DISTANCIA, distancia)
-
-            db.insert(Contrato.Coordenada.TABLE_NAME, null, cv)
-            val y = Intent(this@MenuActivity, Menu::class.java)
-            startActivity(y)
-        }
-    }
-
-
-
-    protected fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent) {
-        // Check which request we're responding to
-        if (requestCode == REQUEST_CODE_OP1) {
-            // Make sure the request was successful
-            if (resultCode == RESULT_OK) {
-                Toast.makeText(
-                    this@MenuActivity,
-                    data.getStringExtra(Util.PARAM_OUTPUT),
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
-        }
-    }
-
-
-    // COORDENADAS
-    @Synchronized
-    protected fun buildGoogleApiClient() {
-        mGoogleApiClient = GoogleApiClient.Builder(this)
-            .addConnectionCallbacks(this)
-            .addOnConnectionFailedListener(this)
-            .addApi(LocationServices.API)
-            .build()
-        createLocationRequest()
-    }
-
-    private fun createLocationRequest() {
-        mLocationRequest.setInterval(10000)
-        mLocationRequest.setFastestInterval(10000)
-        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
-    }
-
-    override fun onSensorChanged(event: SensorEvent?) {
-        TODO("Not yet implemented")
-    }
-
-
-    override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-        // Do something here if sensor accuracy changes.
-    }
-
-
-    override fun onSensorChanged(event: SensorEvent?) {
-        if (event!!.sensor.type == Sensor.TYPE_PROXIMITY) {
-            //Toast.makeText(getApplicationContext(), ""+event.values[0], Toast.LENGTH_SHORT).show();
-            if (event.values[0] >= -car.parking.system.room.SENSOR_SENSITIVITY && event.values[0] <= car.parking.system.room.SENSOR_SENSITIVITY) {
-                startLocationUpdates()
-            } else {
-                //far
-                //Toast.makeText(getApplicationContext(), "far", Toast.LENGTH_SHORT).show();
-            }
-        }
-    }
-
-    override fun onResume() {
-        super.onResume()
-        mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_NORMAL)
-    }
-
-    override fun onPause() {
-        super.onPause()
-        mSensorManager.unregisterListener(this)
-    }
-
-
-
-    fun onConnected(@Nullable bundle: Bundle?) {
-
-        //startLocationUpdates();
-    }
-
-
-    private fun startLocationUpdates() {
-        val PERMISSIONS = arrayOf(
-            Manifest.permission.ACCESS_FINE_LOCATION,
-            Manifest.permission.ACCESS_COARSE_LOCATION
-        )
-        if (ActivityCompat.checkSelfPermission(this, PERMISSIONS[0])
-            !== PackageManager.PERMISSION_GRANTED ||
-            ActivityCompat.checkSelfPermission(this, PERMISSIONS[1])
-            !== PackageManager.PERMISSION_GRANTED
-        ) {
-            ActivityCompat.requestPermissions(this as Activity, PERMISSIONS, 0)
-        } else {
-            // faz pedido de sinal e quando chega dispara o onLocationChanged
-            try {
-                LocationServices.FusedLocationApi.requestLocationUpdates(
-                    mGoogleApiClient,
-                    mLocationRequest,
-                    this
-                )
-            } catch (e: Exception) {
-                Toast.makeText(this, e.message, Toast.LENGTH_SHORT).show()
-            }
-            Toast.makeText(this, R.string.ToastExemplo5, Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    override fun onStart() {
-        super.onStart()
-        // inciiar o serviço de google play
-        mGoogleApiClient.connect()
-    }
-
-
-    fun onLocationChanged(location: Location) {
-        val lastLatitude = location.latitude
-        val lastLongitude = location.longitude
-        GuardarCoordenadasGPS(lastLatitude.toFloat().toDouble(), lastLongitude.toFloat().toDouble())
-        Toast.makeText(this, "lat: $lastLatitude ; long: $lastLongitude", Toast.LENGTH_SHORT).show()
-        LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this)
-        Toast.makeText(this, R.string.ToastExemplo6, Toast.LENGTH_SHORT).show()
-    } */
-
 }
+
+
 

@@ -22,51 +22,50 @@
         android:layout_centerHorizontal="true">
 
         <TextView
-            android:text="@string/about_text_Proj1"
-            android:layout_marginTop="30dp"
-            android:textSize="@dimen/activity_size"
-            android:textStyle="bold"
-            android:textColor="@color/purple_700"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/about_text_Proj1"
+            android:textColor="@color/purple_700"
+            android:textSize="@dimen/activity_size"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="245dp"
-        android:layout_height="161dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         app:srcCompat="@drawable/img1" />
 
 
     <TextView
+        android:id="@+id/about_text_Proj2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="@color/purple_700"
-        android:text="@string/about_text_Proj2"
-        android:id="@+id/about_text_Proj2"
-        android:layout_marginTop="35dp"
         android:layout_below="@+id/imageView"
         android:layout_centerHorizontal="true"
-        android:textSize="@dimen/activity_horizontal_margin"/>
+        android:layout_marginTop="17dp"
+        android:text="@string/about_text_Proj2"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:textStyle="bold" />
 
-
-        <TextView
-            android:id="@+id/about_text_Proj3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/about_text_Proj2"
-            android:layout_marginTop="27dp"
-            android:text="@string/about_text_Proj3"
-            android:textColor="@color/purple_700"
-            android:textStyle="bold"
-            android:autoSizeMaxTextSize="@dimen/text_margin"
-            tools:ignore="UnknownIdInLayout" />
+    <TextView
+        android:id="@+id/about_text_Proj3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_text_Proj2"
+        android:layout_marginTop="7dp"
+        android:autoSizeMaxTextSize="@dimen/text_margin"
+        android:text="@string/about_text_Proj3"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        tools:ignore="UnknownIdInLayout" />
 
     <Button
         android:id="@+id/btn_close"
