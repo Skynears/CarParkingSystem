@@ -13,11 +13,10 @@
     tools:context="car.parking.system.room.LoginActivity">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="359dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
+        android:layout_marginTop="-29dp">
 
         <ImageView
             android:id="@+id/imageView"
@@ -33,15 +32,15 @@
             android:id="@+id/about_text_Proj2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/purple_700"
-            android:text="@string/about_text_Proj2"
-            android:layout_marginTop="35dp"
-            android:layout_centerInParent="true"
             android:layout_below="@+id/imageView"
-            android:paddingBottom="25dp"
+            android:layout_centerInParent="true"
             android:layout_centerHorizontal="true"
-            android:textSize="@dimen/activity_horizontal_margin"/>
+            android:layout_marginTop="35dp"
+            android:paddingBottom="25dp"
+            android:text="@string/about_text_Proj2"
+            android:textColor="@color/purple_700"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/ed_email"
@@ -53,7 +52,7 @@
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
             android:textAlignment="center"
-            android:textColorHint="@color/purple_700"  />
+            android:textColorHint="@color/purple_700" />
 
         <EditText
             android:id="@+id/ed_password"
@@ -67,30 +66,42 @@
             android:textAlignment="center"
             android:textColorHint="@color/purple_700" />
 
-            <Button
-                android:id="@+id/btn_singin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_below="@+id/ed_password"
-                android:layout_centerInParent="true"
-                android:text="@string/botaoSingin"
-                android:textAllCaps="false">
+        <Button
+            android:id="@+id/btn_singin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_password"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:text="@string/botaoSingin"
+            android:textAllCaps="false">
 
-            </Button>
+        </Button>
 
-            <Button
-                android:id="@+id/btn_close"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/btn_singin"
-                android:onClick="buttonMain"
-                android:layout_centerInParent="true"
-                android:text="@string/botaoClose"
-                android:textAllCaps="false">
+        <Button
+            android:id="@+id/btn_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_singin"
+            android:layout_centerInParent="true"
+            android:onClick="buttonReg"
+            android:text="@string/botaoRegistar"
+            android:textAllCaps="false">
 
-            </Button>
+        </Button>
 
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_singin"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="50dp"
+            android:onClick="buttonMain"
+            android:text="@string/botaoClose"
+            android:textAllCaps="false">
+
+        </Button>
 
 
     </RelativeLayout>

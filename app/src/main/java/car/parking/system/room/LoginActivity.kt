@@ -53,8 +53,13 @@ class LoginActivity : AppCompatActivity()
 
             }
         }
-
     }
+
+    fun buttonReg(view: View) {
+        val intent = Intent(this, RegistoActivity::class.java)
+        startActivity(intent)
+    }
+
 
     fun buttonMain(view: View) {
         val intent = Intent(this, MainActivity::class.java)

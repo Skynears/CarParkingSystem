@@ -27,6 +27,7 @@ import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
+import car.parking.system.room.util.Util
 import com.google.android.gms.common.ConnectionResult
 
 import com.google.android.gms.location.LocationListener
@@ -60,12 +61,12 @@ class ShMainActivity : AppCompatActivity() {
 
         registerForContextMenu(lista)
 
-            /*String valor = getIntent().getStringExtra(Util.PARAM_NOME);
-        Toast.makeText(second.this, valor, Toast.LENGTH_SHORT).show();*/
+       /* var  valor = getIntent().getStringExtra(Util.PARAM_NOME);
+        Toast.makeText(this@ShMainActivity, R.string.editFiltro, Toast.LENGTH_SHORT).show()*/
         }
 
         fun botao(v: View?) {
-            val editFiltro = findViewById(R.id.editFiltro) as EditText
+            val editFiltro = findViewById<EditText>(R.id.editFiltro)
             PreencheListaComFiltro(editFiltro.text.toString())
         }
 
