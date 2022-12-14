@@ -48,6 +48,10 @@
             android:exported="true">
         </activity>
         <activity
+            android:name="car.parking.system.room.RegistoActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name="car.parking.system.room.ParqueActivity"
             android:exported="true">
         </activity>

@@ -20,7 +20,7 @@
     <string name="botaoLogin">LOGIN</string>
     <string name="botaoLogout">LOGOUT</string>
     <string name="botaoAlterar">CHANGE</string>
-    <string name="botaoRegistar">REGISTO</string>
+    <string name="botaoRegistar">REGISTER</string>
     <string name="botaoClose">CLOSE</string>
 
 
@@ -72,7 +72,11 @@
     <string name="ToastSingup1">Preencha o campo NºAluno</string>
     <string name="ToastSingup2">Fill in the field Email</string>
     <string name="ToastSingup3">Fill in the field Password</string>
-    <string name="registo_sucessful">"Registado com Sucesso"</string>
+    <string name="ToastSingup4">Repeat the Password</string>
+    <string name="ToastSingup5">Empty Fields Are not Allowed</string>
+    <string name="ToastSingup6">Passwords dont match</string>
+    <string name="ToastSingup7">Already Registered , Sign In !</string>
+    <string name="registo_sucessful">"Successfully Registered"</string>
 
     <string name="singup_n_invalido">NºAluno Inválido</string>
     <string name="singup_email_invalido">Email Institucional Inválido</string>

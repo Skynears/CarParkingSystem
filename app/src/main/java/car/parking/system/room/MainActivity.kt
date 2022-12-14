@@ -68,6 +68,11 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun buttonReg(view: View) {
+        val intent = Intent(this, RegistoActivity::class.java)
+        startActivity(intent)
+    }
+
     fun buttonAbout(view: View) {
         val intent = Intent(this, SobreProjetoActivity::class.java)
         startActivity(intent)

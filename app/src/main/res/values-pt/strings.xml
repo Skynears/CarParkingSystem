@@ -72,11 +72,15 @@
     <string name="ToastSingup1">Preencha o campo NºAluno</string>
     <string name="ToastSingup2">Preencha o campo Email</string>
     <string name="ToastSingup3">Preencha o campo Password</string>
+    <string name="ToastSingup4">Repita a Password</string>
     <string name="registo_sucessful">"Registado com Sucesso"</string>
 
     <string name="singup_n_invalido">NºAluno Inválido</string>
     <string name="singup_email_invalido">Email Institucional Inválido</string>
     <string name="singup_password_invalida">Password Inválida</string>
+    <string name="ToastSingup5">Campos Vazios Não São Permitidos</string>
+    <string name="ToastSingup6">As Passwords não coincidem</string>
+    <string name="ToastSingup7">Já Registado , Inicie Sessão !</string>
     <string name="registo_failed">"O Registo Falhou"</string>
 
 
