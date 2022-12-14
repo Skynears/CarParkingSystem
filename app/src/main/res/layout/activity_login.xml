@@ -79,11 +79,23 @@
 
             </Button>
 
+        <Button
+            android:id="@+id/btn_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_singin"
+            android:layout_centerInParent="true"
+            android:onClick="buttonReg"
+            android:text="@string/botaoRegistar"
+            android:textAllCaps="false">
+
+        </Button>
+
             <Button
                 android:id="@+id/btn_close"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/btn_singin"
+                android:layout_below="@+id/btn_registro"
                 android:onClick="buttonMain"
                 android:layout_centerInParent="true"
                 android:text="@string/botaoClose"
