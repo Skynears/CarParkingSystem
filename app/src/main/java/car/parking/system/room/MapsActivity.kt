@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import car.parking.system.room.db.Contrato
 import car.parking.system.room.db.DB
 import com.example.carparkingsystem.R
+import com.example.carparkingsystem.databinding.ActivityMapsBinding
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -22,15 +23,20 @@ internal class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     var mDbHelper: DB? = null
     var db: SQLiteDatabase? = null
     var c_coordenadas: Cursor? = null
-    private var mMap: GoogleMap? = null
+    private lateinit var mMap: GoogleMap
+    private lateinit var binding: ActivityMapsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_maps)
+
+        binding = ActivityMapsBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
+
 
         mDbHelper = DB(this)
         db = mDbHelper!!.getWritableDatabase()
