@@ -54,8 +54,9 @@
     <string name="ToastSingup3">Fill in the field Password</string>
     <string name="ToastSingup4">Repeat the Password</string>
     <string name="ToastSingup5">Empty Fields Are not Allowed</string>
-    <string name="ToastSingup6">Passwords dont match</string>
-    <string name="ToastSingup7">Already Registered , Sign In !</string>
+    <string name="ToastSingup6">Passwords don\'t match</string>
+    <string name="ToastSingup7">Already Registered, sign in</string>
+    <string name="ToastSingup8">Don\'t have an account, create one now</string>
     <string name="registo_sucessful">"Successfully Registered"</string>
 
     <string name="singup_n_invalido">NºAluno Inválido</string>
@@ -84,7 +85,7 @@
 
     <string name="alterar_email_invalido">Email Institucional Inválido</string>
     <string name="alterar_password_invalida">Password Inválida</string>
-    <string name="alterar_repetir_password_invalida">Passwords Dont Match</string>
+    <string name="alterar_repetir_password_invalida">Passwords Don\'t Match</string>
     <string name="alterar_failed">"A Alteração dos Dados Falhou"</string>
 
 

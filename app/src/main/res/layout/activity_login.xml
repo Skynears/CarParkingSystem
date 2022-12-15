@@ -77,29 +77,28 @@
 
         </Button>
 
-        <Button
-            android:id="@+id/btn_registro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_singin"
-            android:layout_centerInParent="true"
-            android:onClick="buttonReg"
-            android:text="@string/botaoRegistar"
-            android:textAllCaps="false">
-
-        </Button>
 
         <Button
             android:id="@+id/btn_close"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_registro"
+            android:layout_below="@+id/btn_singin"
             android:layout_centerInParent="true"
             android:onClick="buttonMain"
             android:text="@string/botaoClose"
             android:textAllCaps="false">
 
         </Button>
+
+        <TextView
+            android:id="@+id/textView_registo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_close"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/ToastSingup8"
+            android:textColor="@color/purple_700" />
 
 
     </RelativeLayout>

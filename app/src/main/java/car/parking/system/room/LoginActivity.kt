@@ -32,7 +32,10 @@ class LoginActivity : AppCompatActivity()
         // Initialize Firebase Auth
         auth = Firebase.auth
 
-
+        binding.textViewRegisto.setOnClickListener {
+            val intent = Intent(this, RegistoActivity::class.java)
+            startActivity(intent)
+        }
         binding.btnSingin.setOnClickListener {
             val email = binding.edEmail.text.toString()
             val pass = binding.edPassword.text.toString()

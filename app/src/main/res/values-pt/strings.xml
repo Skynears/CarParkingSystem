@@ -36,13 +36,6 @@
         pretendemos diminuir o tempo a estacionar e a emissão de CO2.
     </string>
 
-    <string name="about_text_Doc1">DOCENTE</string>
-    <string name="about_text_Doc2">Sara Paiva</string>
-    <string name="about_text_Doc3">Progamação Móvel </string>
-    <string name="about_text_Doc4">Engenharia de Redes e Sistemas de Computadores</string>
-    <string name="about_text_Doc45">Escola Superior de Tecnologia e Gestão</string>
-
-
     <string name="about_text_Equipa1">DESENVOLVEDORES</string>
     <string name="about_text_Equipa1_fern1">Fernando Malheiro | Nº-19523</string>
     <string name="about_text_Equipa1_Jose1">José Baptista | Nº-24834</string>
@@ -65,7 +58,8 @@
     <string name="singup_password_invalida">Password Inválida</string>
     <string name="ToastSingup5">Campos Vazios Não São Permitidos</string>
     <string name="ToastSingup6">As Passwords não coincidem</string>
-    <string name="ToastSingup7">Já Registado , Inicie Sessão !</string>
+    <string name="ToastSingup7">Já Registado, inicie sessão</string>
+    <string name="ToastSingup8">Não tem uma conta, crie uma agora</string>
     <string name="registo_failed">"O Registo Falhou"</string>
 
 
