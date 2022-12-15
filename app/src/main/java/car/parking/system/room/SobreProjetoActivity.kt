@@ -16,6 +16,7 @@ class SobreProjetoActivity : AppCompatActivity() {
         setContentView(R.layout.sobre_projeto)
     }
 
+
     fun buttonMain3(view: View) {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)

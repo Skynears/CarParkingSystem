@@ -10,15 +10,15 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/azul"
-    tools:context="car.parking.system.room.MainActivity">
+    tools:context="car.parking.system.room.MenuActivity">
 
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:orientation="horizontal"
-        android:layout_marginTop="65dp">
+        android:layout_marginTop="40dp"
+        android:paddingTop="40dp">
 
 
         <ImageView
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="10dp"
             android:paddingTop="10dp"
             app:srcCompat="@drawable/img1" />
 
@@ -39,54 +39,43 @@
             android:layout_below="@+id/imageView"
             android:layout_centerInParent="true"
             android:layout_marginTop="35dp"
-            android:paddingBottom="25dp"
             android:text="@string/about_text_Proj2"
             android:textColor="@color/purple_700"
             android:textSize="@dimen/activity_horizontal_margin"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btn_enter"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/login_sucessful"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/about_text_Proj2"
             android:layout_centerInParent="true"
-            android:onClick="buttonLogin"
-            android:text="@string/botaoEnter"
-            android:textAllCaps="false">
-
-        </Button>
-
-        <Button
-            android:id="@+id/btn_about"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_enter"
-            android:layout_centerInParent="true"
-            android:onClick="buttonAbout"
-            android:text="@string/botaoAbout"
-            android:textAllCaps="false"></Button>
+            android:layout_marginTop="20dp"
+            android:text="@string/login_sucessful"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="25dp" />
 
         <Button
-            android:id="@+id/btn_about1"
+            android:id="@+id/getLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_about"
-            android:layout_centerInParent="true"
-            android:onClick="buttonAbout1"
-            android:text="@string/botaoAbout1"
-            android:textAllCaps="false">
-
-        </Button>
+            android:layout_below="@+id/login_sucessful"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="13dp"
+            android:onClick="buttonGET"
+            android:text="@string/botaoGET"
+            tools:ignore="OnClick" />
 
         <Button
-            android:id="@+id/btn_exit"
+            android:id="@+id/btn_close"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_about1"
-            android:layout_centerInParent="true"
-            android:onClick="buttonExit"
-            android:text="@string/botaoExit"
+            android:layout_below="@+id/getLocation"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-1dp"
+            android:onClick="buttonLogout"
+            android:text="@string/botaoLogout"
             android:textAllCaps="false">
 
         </Button>

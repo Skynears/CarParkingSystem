@@ -37,6 +37,7 @@ import com.google.android.gms.location.LocationServices
 
 class ShMainActivity : AppCompatActivity() {
 
+
     private lateinit var mDbHelper: DB
     private lateinit var db: SQLiteDatabase
     private lateinit var c_coordenadas: Cursor

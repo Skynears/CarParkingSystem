@@ -11,7 +11,6 @@ class SobreEquipaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.sobre_equipa)
     }
-
     fun buttonMain4(view: View) {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)

@@ -18,7 +18,7 @@ import android.view.View;
 
 
 /*
-public class ShPreferences {
+class ShPreferences {
     val sharedPreference =  getSharedPreferences("PREFERENCE_NAME",Context.MODE_PRIVATE)
     Override fun onCreate(bundle savedInstanceState){
 

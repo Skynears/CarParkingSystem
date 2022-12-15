@@ -2,8 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:defaultNavHost="true"
-    android:name="androidx.navigation.fragment.NavHostFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -27,9 +25,9 @@
             android:layout_centerInParent="true"
             android:layout_marginTop="25dp"
             android:padding="30dp"
-            android:text="@string/ed_sh1"
-            android:textAlignment="center"
+            android:text="Editar Campos"
             android:textColor="@color/purple_700"
+            android:textAlignment="center"
             android:textSize="25dp" />
 
     </RelativeLayout>
@@ -42,15 +40,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@android:color/black"
-            android:text="@string/ed_sh3"/>
+            android:text="Latitude: "/>
 
         <EditText
             android:id="@+id/latitude"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="left|center_vertical"
-            android:imeOptions="actionNext" />
+            android:imeOptions="actionNext"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -61,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@android:color/black"
-            android:text="@string/ed_sh4"/>
+            android:text="Longitude: "/>
 
         <EditText
             android:id="@+id/longitude"
@@ -81,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@android:color/black"
-            android:text="@string/ed_sh2"/>
+            android:text="Distância: "/>
 
         <TextView
             android:id="@+id/distancia"
@@ -101,20 +100,5 @@
         />
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-
-            android:layout_centerInParent="true"
-            android:layout_marginBottom="218dp"
-            app:srcCompat="@drawable/img1" />
-    </RelativeLayout>
 
 </LinearLayout>

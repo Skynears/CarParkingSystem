@@ -13,7 +13,8 @@
 
 
     <string name="botaoEnter">ENTER</string>
-    <string name="botaoAbout">ABOUT US</string>
+    <string name="botaoAbout">ABOUT PROJECT</string>
+    <string name="botaoAbout1">ABOUT DEVELOPERS</string>
     <string name="botaoExit">EXIT</string>
     <string name="botaoSingin">SING IN</string>
     <string name="botaoSingup">SING UP</string>
@@ -43,10 +44,9 @@
     <string name="about_text_Equipa1_Andr1">André Barreiro | Nº-23680</string>
     <string name="about_text_Equipa1_Ricar1">Ricardo Gonçalves | Nº-24839</string>
     <string name="about_text_Equipa1_Hugo1">Hugo Pereira | Nº-23051</string>
-    <string name="about_text_Equipa1_1">Progamação Móvel </string>
-    <string name="about_text_Equipa1_2">Engenharia de Redes e Sistemas de Computadores</string>
-    <string name="about_text_Equipa1_3">Escola Superior de Tecnologia e Gestão</string>
-
+    <string name="about_text_Equipa1_1">Mobile Programming</string>
+    <string name="about_text_Equipa1_2">Network Engineering and Computer Systems</string>
+    <string name="about_text_Equipa1_3">School of Technology and Management</string>
 
 
     <string name="ToastSingup1">Preencha o campo NºAluno</string>
@@ -89,7 +89,8 @@
     <string name="alterar_failed">"A Alteração dos Dados Falhou"</string>
 
 
-    <string name="ToastP1_1">Park Status #1:</string>
+    <string name="ToastP1_0">ESTG PARK</string>
+    <string name="ToastP1_1">PARK STATUS:</string>
     <string name="ToastP1_2">Parking Spaces Available:</string>
     <string name="ToastP1_3">Parking Spaces Unavailable:</string>
     <string name="ToastP1_4">CO2 Emissions Levels:</string>
@@ -106,9 +107,13 @@
     <string name="ToastMapa7">Distance from School:</string>
 
     <string name="shared_pref_1">SHPreferences</string>
-    <string name="filtro">filtro</string>
+    <string name="filtro">Filter</string>
     <string name="sensor">PUT YOUR HAND OVER THE CELL PHONE SENSOR</string>
     <string name="filtrarmenor">Filter less</string>
+    <string name="ed_sh1">EDIT FILDS</string>
+    <string name="ed_sh2">Distance:</string>
+    <string name="ed_sh3">Latitude:</string>
+    <string name="ed_sh4">Longitude:</string>
     <string name="ToastExemplo">fill in the field Latitude</string>
     <string name="ToastExemplo1">fill in the field Longitude</string>
     <string name="ToastExemplo2">Invalid data discards</string>
@@ -122,7 +127,6 @@
     <string name="ToastExemplo10">Posição a apagar:</string>
     <string name="ToastExemplo11">Apagado com sucesso</string>
 
-
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
@@ -135,5 +139,6 @@
     <string name="Language_already_selected">Language is Already Selected</string>
     <string name="lang_en">ENGLISH</string>
     <string name="lang_pt">PORTUGUESE</string>
+
 
 </resources>

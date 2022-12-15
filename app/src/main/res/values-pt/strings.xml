@@ -14,7 +14,8 @@
 
 
     <string name="botaoEnter">ENTRAR</string>
-    <string name="botaoAbout">SOBRE</string>
+    <string name="botaoAbout">SOBRE PROJETO</string>
+    <string name="botaoAbout1">SOBRE DESENVOLVEDORES</string>
     <string name="botaoExit">SAIR</string>
     <string name="botaoSingin">SING IN</string>
     <string name="botaoSingup">SING UP</string>
@@ -86,8 +87,8 @@
     <string name="alterar_repetir_password_invalida">Passwords Dont Match</string>
     <string name="alterar_failed">"A Alteração dos Dados Falhou"</string>
 
-
-    <string name="ToastP1_1">Estado do Parque Nº1:</string>
+    <string name="ToastP1_0">PARQUE ESTG</string>
+    <string name="ToastP1_1">Estado do Parqu:</string>
     <string name="ToastP1_2">Vagas Disponiveis:</string>
     <string name="ToastP1_3">Vagas Indisponíveis:</string>
     <string name="ToastP1_4">Niveís de Emissões CO2:</string>
@@ -104,11 +105,15 @@
     <string name="ToastMapa7"> Distância da Escola:</string>
 
     <string name="shared_pref_1">SHPreferences</string>
-    <string name="filtro">filtro</string>
+    <string name="filtro">Filtro</string>
     <string name="sensor">
         PASSE A MÃO SOBRE O SENSOR DO TELEMÓVEL
     </string>
     <string name="filtrarmenor">Filtrar menor</string>
+    <string name="ed_sh1">EDITAR CAMPOS</string>
+    <string name="ed_sh2">Distância:</string>
+    <string name="ed_sh3">Latitude:</string>
+    <string name="ed_sh4">Longitude:</string>
     <string name="ToastExemplo">preencha o campo Latitude</string>
     <string name="ToastExemplo1">preencha o campo Longitude</string>
     <string name="ToastExemplo2">Dados inválidos descarta</string>

@@ -73,6 +73,11 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun buttonAbout1(view: View) {
+        val intent = Intent(this, SobreEquipaActivity::class.java)
+        startActivity(intent)
+    }
+
     fun buttonExit(view: View) {
         this.finishAffinity()
     }

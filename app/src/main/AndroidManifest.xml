@@ -24,13 +24,6 @@
             android:value="${MAPS_API_KEY}" />
 
         <activity
-            android:name=".SobreEquipaActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name="car.parking.system.room.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -47,6 +40,9 @@
             android:name="car.parking.system.room.SobreProjetoActivity"
             android:exported="false" />
         <activity
+            android:name="car.parking.system.room.SobreEquipaActivity"
+            android:exported="false" />
+        <activity
             android:name="car.parking.system.room.MenuActivity"
             android:exported="false" />
         <activity
@@ -57,13 +53,13 @@
             android:exported="false" />
         <activity
             android:name="car.parking.system.room.LoginActivity"
-            android:exported="true"></activity>
+            android:exported="false"/>
         <activity
             android:name="car.parking.system.room.RegistoActivity"
-            android:exported="true"></activity>
+            android:exported="false"/>
         <activity
             android:name="car.parking.system.room.ParqueActivity"
-            android:exported="true"></activity>
+            android:exported="false"/>
 
         <meta-data
             android:name="com.google.android.gms.ads.AD_MANAGER_APP"

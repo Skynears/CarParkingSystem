@@ -2,4 +2,130 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav.xml" />
+    android:id="@+id/nav.xml"
+    app:startDestination="@id/mainActivity">
+
+    <fragment
+        android:id="@+id/shActivity"
+        android:name="car.parking.system.room.ShMainActivity"
+        android:label="activity_sh_main"
+        tools:layout="@layout/activity_sh_main" >
+        <action
+            android:id="@+id/action_blankFragment_to_rowActivity"
+            app:destination="@id/rowActivity" />
+        <action
+            android:id="@+id/action_shActivity_to_menuActivity"
+            app:destination="@id/menuActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rowActivity"
+        android:name="car.parking.system.room.RowActivity"
+        android:label="sh_activity_row"
+        tools:layout="@layout/sh_activity_row">
+         <action
+            android:id="@+id/action_blankFragment_to_shActivity"
+            app:destination="@id/shActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/menuActivity"
+        android:name="car.parking.system.room.MenuActivity"
+        android:label="menu_teste"
+        tools:layout="@layout/menu_teste" >
+        <action
+            android:id="@+id/action_menuActivity_to_shActivity"
+            app:destination="@id/shActivity" />
+        <action
+            android:id="@+id/action_menuActivity_to_mapsActivity2"
+            app:destination="@id/mapsActivity2" />
+        <action
+            android:id="@+id/action_menuActivity_to_parqueActivity"
+            app:destination="@id/parqueActivity" />
+        <action
+            android:id="@+id/action_menuActivity_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginActivity"
+        android:name="car.parking.system.room.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" >
+        <action
+            android:id="@+id/action_loginActivity_to_menuActivity"
+            app:destination="@id/menuActivity" />
+        <action
+            android:id="@+id/action_loginActivity_to_registoActivity"
+            app:destination="@id/registoActivity" />
+        <action
+            android:id="@+id/action_loginActivity_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registoActivity"
+        android:name="car.parking.system.room.RegistoActivity"
+        android:label="activity_registo"
+        tools:layout="@layout/activity_registo" >
+        <action
+            android:id="@+id/action_registoActivity_to_loginActivity2"
+            app:destination="@id/loginActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mapsActivity2"
+        android:name="car.parking.system.room.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" >
+        <action
+            android:id="@+id/action_mapsActivity2_to_menuActivity"
+            app:destination="@id/menuActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/parqueActivity"
+        android:name="car.parking.system.room.ParqueActivity"
+        android:label="activity_parque"
+        tools:layout="@layout/activity_parque" >
+        <action
+            android:id="@+id/action_parqueActivity_to_menuActivity"
+            app:destination="@id/menuActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainActivity"
+        android:name="car.parking.system.room.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_mainActivity_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_mainActivity_to_sobreProjetoActivity"
+            app:destination="@id/sobreProjetoActivity" />
+        <action
+            android:id="@+id/action_mainActivity_to_sobreEquipaActivity"
+            app:destination="@id/sobreEquipaActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/sobreEquipaActivity"
+        android:name="car.parking.system.room.SobreEquipaActivity"
+        android:label="sobre_equipa"
+        tools:layout="@layout/sobre_equipa" >
+        <action
+            android:id="@+id/action_sobreEquipaActivity_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/sobreProjetoActivity"
+        android:name="car.parking.system.room.SobreProjetoActivity"
+        android:label="sobre_projeto"
+        tools:layout="@layout/sobre_projeto" >
+        <action
+            android:id="@+id/action_sobreProjetoActivity_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+
+
+</navigation>
+
+
